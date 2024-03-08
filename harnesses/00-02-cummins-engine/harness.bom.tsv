@@ -1,0 +1,6 @@
+Id	Description	Qty	Unit	Designators
+1	Cable, 1 x 20 AWG	0	m	can bus 1+, can bus 1-, enginePositionReferenceSignal, fuelShutOff, lowIdleSelect, shield1, vp4412+, vp4412-
+2	Connector, ???, ???, 11 pins	1		oem11pin
+3	Connector, ???, ???, 14 pins	1		oem14pin
+4	Connector, ???, ????, 9 pins	1		vp44
+5	Connector, DRC20-50P, key 4, 50 pins	1		ecu

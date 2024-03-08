@@ -1,0 +1,77 @@
+connectors:
+  ecu:
+    type: DRC20-50P
+    subtype: key 4
+    pincount: 50
+  vp44:
+    type: ???
+    subtype: ????
+    pinlabels: [CANBUS-, CANBUS+, SHIELD, LOW_IDLE, FUEL_SHUTOFF, 12-, 12+, ENGINE_POSITION_REFERENCE_SIGNAL, UNKNOWN]
+  oem11pin:
+    type: ???
+    subtype: ???
+    pincount: 11
+  oem14pin:
+    type: ???
+    subtype: ???
+    pincount: 14
+
+cables:
+  can bus 1+:
+    colors: [YE]
+    gauge: 20 AWG
+  can bus 1-:
+    colors: [GN]
+    gauge: 20 AWG
+  shield1:
+    colors: [BK]
+    gauge: 20 AWG
+  enginePositionReferenceSignal:
+    colors: [PK]
+    gauge: 20 AWG
+  lowIdleSelect:
+    colors: [BG]
+    gauge: 20 AWG
+  fuelShutOff:
+    colors: [GD]
+    gauge: 20 AWG
+  vp4412+:
+    colors: [RD]
+    gauge: 20 AWG
+  vp4412-:
+    colors: [BK]
+    gauge: 20 AWG
+
+connections:
+  -
+    - ecu: [13]
+    - can bus 1+: [1]
+    - vp44: [2]
+  -
+    - ecu: [23]
+    - can bus 1-: [1]
+    - vp44: [1]
+  -
+    - ecu: [44]
+    - shield1: [1]
+    - vp44: [3]
+  -
+    - ecu: [18]
+    - enginePositionReferenceSignal: [1]
+    - vp44: [8]
+  -
+    - ecu: [34]
+    - lowIdleSelect: [1]
+    - vp44: [4]
+  -
+    - ecu: [33]
+    - fuelShutOff: [1]
+    - vp44: [5]
+  -
+    - oem11pin: [7]
+    - vp4412+: [1]
+    - vp44: [7]
+  -
+    - oem14pin: [12]
+    - vp4412-: [1]
+    - vp44: [6]
