@@ -183,8 +183,13 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">???</td>
-   <td balign="left">????</td>
+   <td balign="left">AMP: 1123006-2</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">AMP</td>
+   <td balign="left">2.5 CONTACT 9POS SOCKET HOUSING ASSY</td>
    <td balign="left">9-pin</td>
   </tr></table>
  </td></tr>
@@ -227,6 +232,11 @@ graph {
     <td>UNKNOWN</td>
    </tr>
   </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left"><img scale="false" src="vp44/pr1123006.webp"/></td>
+  </tr></table>
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]

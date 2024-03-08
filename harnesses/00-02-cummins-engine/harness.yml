@@ -4,8 +4,12 @@ connectors:
     subtype: key 4
     pincount: 50
   vp44:
-    type: ???
-    subtype: ????
+    type: AMP
+    subtype: 2.5 CONTACT 9POS SOCKET HOUSING ASSY
+    manufacturer: AMP
+    mpn: 1123006-2
+    image:
+      src: vp44/pr1123006.webp
     pinlabels: [CANBUS-, CANBUS+, SHIELD, LOW_IDLE, FUEL_SHUTOFF, 12-, 12+, ENGINE_POSITION_REFERENCE_SIGNAL, UNKNOWN]
   oem11pin:
     type: ???
