@@ -10,6 +10,7 @@ connectors:
     mpn: 1123006-2
     image:
       src: vp44/pr1123006.webp
+    notes: https://mopar1973man.com/topic/13322-how-to-extract-terminals-from-a-vp44-connector/
     pinlabels: [CANBUS-, CANBUS+, SHIELD, LOW_IDLE, FUEL_SHUTOFF, 12-, 12+, ENGINE_POSITION_REFERENCE_SIGNAL, UNKNOWN]
   oem11pin:
     type: ???
