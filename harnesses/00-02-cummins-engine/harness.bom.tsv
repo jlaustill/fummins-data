@@ -1,6 +1,8 @@
 Id	Description	Qty	Unit	Designators	Manufacturer	MPN
-1	Cable, 1 x 20 AWG	0	m	can bus 1+, can bus 1-, enginePositionReferenceSignal, fuelShutOff, lowIdleSelect, shield1, vp4412+, vp4412-		
+1	Cable, 1 x 20 AWG	0	m	acClutch+, acPressureSwitch1, acPressureSwitch2, can bus 1+, can bus 1-, enginePositionReferenceSignal, fuelHeater+, fuelShutOff, lowIdleSelect, shield1, vp4412+, vp4412-		
 2	Connector, ???, ???, 11 pins	1		oem11pin		
 3	Connector, ???, ???, 14 pins	1		oem14pin		
-4	Connector, AMP, 2.5 CONTACT 9POS SOCKET HOUSING ASSY, 9 pins	1		vp44	AMP	1123006-2
-5	Connector, DRC20-50P, key 4, 50 pins	1		ecu		
+4	Connector, ???, ???, 2 pins	3		acClutch2pin, acPressureSwitch2pin, fuelHeater2pin		
+5	Connector, AMP, 2.5 CONTACT 9POS SOCKET HOUSING ASSY, 9 pins	1		vp44	AMP	1123006-2
+6	Connector, DRC20-50P, key 4, 50 pins	1		ecu		
+7	Connector, ring terminal, 1 pins	1		engineGroundRingTerminal		
