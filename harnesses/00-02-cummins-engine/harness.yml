@@ -2,7 +2,7 @@ connectors:
   ecu:
     type: DRC20-50P
     subtype: key 4
-    pincount: 50
+    pinlabels: [one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, foutreen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty, twenty one, twenty two, twenty three, twenty four, twenty five, twenty six, twenty seven, twenty eight, intake air heater 2 control, thirty, thirty one, thirty two, thirty three, thirty four, thirty five, thirty six, thirty seven, thirty eight, thirty nine, Vehicle DataLink -, Vehicle DataLink +, forty two, forty three, forty four, tachometer signal, forty six, intake air heater 2 control, forty eight, forty nine, fifty]
   vp44:
     type: AMP
     subtype: 2.5 CONTACT 9POS SOCKET HOUSING ASSY
@@ -16,10 +16,10 @@ connectors:
     type: ???
     subtype: ???
     pincount: 11
-  oem14pin:
+  oem14pinConnector:
     type: ???
     subtype: ???
-    pincount: 14
+    pinlabels: [a, b, c, d, Vehicle DataLink +, f, Vehicle DataLink -, h, i, tachometer signal, k, l, intake air heater 1 control, intake air heater 2 control]
   fuelHeater2pin:
     type: ???
     subtype: ???
@@ -39,6 +39,15 @@ connectors:
       src: ringTerminal/61DLI9gydlL.jpg
       width: 50
       height: 50
+  acceleratorPositionSensor:
+    type: Male Plug
+    manufacturer: Deutsch
+    mpn: DT06-6S
+    image:
+      src: connectors/DT06-6S.webp
+      width: 50
+    notes: https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/4849/DS_1208_DT_Series.pdf
+    pinlabels: [sensor ground, off idle signal, position signal, position return, position +5 volt supply, idle signal]
 
 cables:
   can bus 1+:
@@ -77,6 +86,12 @@ cables:
   acPressureSwitch2:
     colors: [BK]
     gauge: 20 AWG
+  apsWire:
+    colors: [BK, GNBU, BUBK, BKYE, BUWH, BNOG]
+    gauge: 20 AWG
+  ecuTo14pin:
+    colors: [BK, BK, BK, BK, BK]
+    gauge: 20 AWG
 
 connections:
   -
@@ -108,11 +123,11 @@ connections:
     - vp4412+: [1]
     - vp44: [7]
   -
-    - oem14pin: [12]
+    - oem14pinConnector: [12]
     - vp4412-: [1]
     - vp44: [6]
   -
-    - oem14pin: [ 12 ]
+    - oem14pinConnector: [ 12 ]
     - vp4412-: [1]
     - fuelHeater2pin: [2]
   -
@@ -120,7 +135,7 @@ connections:
     - fuelHeater+: [1]
     - fuelHeater2pin: [1]
   -
-    - oem14pin: [ 12 ]
+    - oem14pinConnector: [ 12 ]
     - vp4412-: [1]
     - acClutch2pin: [2]
   -
@@ -132,10 +147,18 @@ connections:
     - acPressureSwitch1: [1]
     - acPressureSwitch2pin: [1]
   -
-    - oem14pin: [9]
+    - oem14pinConnector: [9]
     - acPressureSwitch2: [1]
     - acPressureSwitch2pin: [2]
   -
-    - oem14pin: [12]
+    - oem14pinConnector: [12]
     - vp4412-: [1]
     - engineGroundRingTerminal: [1]
+  -
+    - ecu: [11,16,25,32,31,1]
+    - apsWire: [1,2,3,4,5,6]
+    - acceleratorPositionSensor: [1,2,3,4,5,6]
+  -
+    - oem14pinConnector: [ 14, 13, 10, 5, 7 ]
+    - ecuTo14pin: [1, 2, 3, 4, 5]
+    - ecu: [47, 29, 45, 41, 40]
