@@ -1,6 +1,6 @@
 Id	Description	Qty	Unit	Designators	Manufacturer	MPN
 1	Cable, 1 x 20 AWG	0	m	acClutch+, acPressureSwitch1, acPressureSwitch2, can bus 1+, can bus 1-, enginePositionReferenceSignal, fuelHeater+, fuelShutOff, lowIdleSelect, shield1, vp4412+, vp4412-		
-2	Cable, 2 x 16 AWG	0	m	ecuTo11pinWire		
+2	Cable, 2 x 16 AWG	0	m	ecuTo11pinPowerWire		
 3	Cable, 5 x 20 AWG	0	m	ecuTo14pin		
 4	Cable, 6 x 20 AWG	0	m	apsWire		
 5	Connector, ???, ???, 11 pins	1		oem11pinConnector		

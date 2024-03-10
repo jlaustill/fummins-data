@@ -87,7 +87,7 @@ graph {
    </tr>
    <tr>
     <td port="p14l">14</td>
-    <td>foutreen</td>
+    <td>fourteen</td>
     <td port="p14r">14</td>
    </tr>
    <tr>
@@ -162,7 +162,7 @@ graph {
    </tr>
    <tr>
     <td port="p29l">29</td>
-    <td>intake air heater 2 control</td>
+    <td>intake air heater 1 control</td>
     <td port="p29r">29</td>
    </tr>
    <tr>
@@ -1370,7 +1370,7 @@ graph {
     <td>
      2:BK
     </td>
-    <td>ecu:29:intake air heater 2 control</td>
+    <td>ecu:29:intake air heater 1 control</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="10">
@@ -1443,16 +1443,16 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#ff0000:#ff0000:#000000"]
-	oem11pinConnector:p3r:e -- ecuTo11pinWire:w1:w
-	ecuTo11pinWire:w1:e -- ecu:p48l:w
+	oem11pinConnector:p3r:e -- ecuTo11pinPowerWire:w1:w
+	ecuTo11pinPowerWire:w1:e -- ecu:p48l:w
 	edge [color="#000000:#ff0000:#ff0000:#ff0000:#000000"]
-	oem11pinConnector:p3r:e -- ecuTo11pinWire:w2:w
-	ecuTo11pinWire:w2:e -- ecu:p50l:w
-	ecuTo11pinWire [label=<
+	oem11pinConnector:p3r:e -- ecuTo11pinPowerWire:w2:w
+	ecuTo11pinPowerWire:w2:e -- ecu:p50l:w
+	ecuTo11pinPowerWire [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">ecuTo11pinWire</td>
+   <td balign="left">ecuTo11pinPowerWire</td>
   </tr></table>
  </td></tr>
  <tr><td>

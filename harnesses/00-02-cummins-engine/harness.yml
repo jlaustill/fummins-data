@@ -2,7 +2,12 @@ connectors:
   ecu:
     type: DRC20-50P
     subtype: key 4
-    pinlabels: [one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, foutreen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty, twenty one, twenty two, twenty three, twenty four, twenty five, twenty six, twenty seven, twenty eight, intake air heater 2 control, thirty, thirty one, thirty two, thirty three, thirty four, thirty five, thirty six, thirty seven, thirty eight, thirty nine, Vehicle DataLink -, Vehicle DataLink +, forty two, forty three, forty four, tachometer signal, forty six, intake air heater 2 control, Constant 12 volt, forty nine, Constant 12 volt]
+    pinlabels: [one, two, three, four, five, six, seven, eight, nine,
+                ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen,
+                twenty, twenty one, twenty two, twenty three, twenty four, twenty five, twenty six, twenty seven, twenty eight, intake air heater 1 control,
+                thirty, thirty one, thirty two, thirty three, thirty four, thirty five, thirty six, thirty seven, thirty eight, thirty nine,
+                Vehicle DataLink -, Vehicle DataLink +, forty two, forty three, forty four, tachometer signal, forty six, intake air heater 2 control, Constant 12 volt, forty nine,
+                Constant 12 volt]
   vp44:
     type: AMP
     subtype: 2.5 CONTACT 9POS SOCKET HOUSING ASSY
@@ -92,7 +97,7 @@ cables:
   ecuTo14pin:
     colors: [BK, BK, BK, BK, BK]
     gauge: 20 AWG
-  ecuTo11pinWire:
+  ecuTo11pinPowerWire:
     colors: [RD, RD]
     gauge: 16 AWG
 
@@ -167,5 +172,5 @@ connections:
     - ecu: [47, 29, 45, 41, 40]
   -
     - oem11pinConnector: [3, 3]
-    - ecuTo11pinWire: [1, 2]
+    - ecuTo11pinPowerWire: [1, 2]
     - ecu: [48, 50]

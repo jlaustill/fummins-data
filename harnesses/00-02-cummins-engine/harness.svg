@@ -102,7 +102,7 @@
 <polygon fill="none" stroke="black" points="1099,-1570.5 1099,-1593.5 1123,-1593.5 1123,-1570.5 1099,-1570.5"/>
 <text text-anchor="start" x="1103" y="-1578.3" font-family="arial" font-size="14.00">14</text>
 <polygon fill="none" stroke="black" points="1123,-1570.5 1123,-1593.5 1284,-1593.5 1284,-1570.5 1123,-1570.5"/>
-<text text-anchor="start" x="1178.5" y="-1578.3" font-family="arial" font-size="14.00">foutreen</text>
+<text text-anchor="start" x="1178.5" y="-1578.3" font-family="arial" font-size="14.00">fourteen</text>
 <polygon fill="none" stroke="black" points="1284,-1570.5 1284,-1593.5 1308,-1593.5 1308,-1570.5 1284,-1570.5"/>
 <text text-anchor="start" x="1288" y="-1578.3" font-family="arial" font-size="14.00">14</text>
 <polygon fill="none" stroke="black" points="1099,-1547.5 1099,-1570.5 1123,-1570.5 1123,-1547.5 1099,-1547.5"/>
@@ -192,7 +192,7 @@
 <polygon fill="none" stroke="black" points="1099,-1225.5 1099,-1248.5 1123,-1248.5 1123,-1225.5 1099,-1225.5"/>
 <text text-anchor="start" x="1103" y="-1233.3" font-family="arial" font-size="14.00">29</text>
 <polygon fill="none" stroke="black" points="1123,-1225.5 1123,-1248.5 1284,-1248.5 1284,-1225.5 1123,-1225.5"/>
-<text text-anchor="start" x="1127" y="-1233.3" font-family="arial" font-size="14.00">intake air heater 2 control</text>
+<text text-anchor="start" x="1127" y="-1233.3" font-family="arial" font-size="14.00">intake air heater 1 control</text>
 <polygon fill="none" stroke="black" points="1284,-1225.5 1284,-1248.5 1308,-1248.5 1308,-1225.5 1284,-1225.5"/>
 <text text-anchor="start" x="1288" y="-1233.3" font-family="arial" font-size="14.00">29</text>
 <polygon fill="none" stroke="black" points="1099,-1202.5 1099,-1225.5 1123,-1225.5 1123,-1202.5 1099,-1202.5"/>
@@ -848,12 +848,12 @@
 <path fill="none" stroke="#000000" stroke-width="2" d="M158.5,-269.5C281.15,-268.3 305.52,-212.3 424.5,-213.5"/>
 <path fill="none" stroke="#000000" stroke-width="2" d="M158.5,-271.5C282.98,-269.1 307.35,-213.1 424.5,-215.5"/>
 </g>
-<!-- ecuTo11pinWire -->
+<!-- ecuTo11pinPowerWire -->
 <g id="node24" class="node">
-<title>ecuTo11pinWire</title>
+<title>ecuTo11pinPowerWire</title>
 <polygon fill="#ffffff" stroke="black" points="841.5,-604.5 387.5,-604.5 387.5,-462.5 841.5,-462.5 841.5,-604.5"/>
 <polygon fill="none" stroke="black" points="387.5,-581.5 387.5,-604.5 841.5,-604.5 841.5,-581.5 387.5,-581.5"/>
-<text text-anchor="start" x="566" y="-589.3" font-family="arial" font-size="14.00">ecuTo11pinWire</text>
+<text text-anchor="start" x="546.5" y="-589.3" font-family="arial" font-size="14.00">ecuTo11pinPowerWire</text>
 <polygon fill="none" stroke="black" points="387.5,-558.5 387.5,-581.5 596.5,-581.5 596.5,-558.5 387.5,-558.5"/>
 <text text-anchor="start" x="484.5" y="-566.3" font-family="arial" font-size="14.00">2x</text>
 <polygon fill="none" stroke="black" points="596.5,-558.5 596.5,-581.5 841.5,-581.5 841.5,-558.5 596.5,-558.5"/>
@@ -877,18 +877,18 @@
 <polygon fill="#000000" stroke="transparent" points="387.5,-481.5 387.5,-483.5 841.5,-483.5 841.5,-481.5 387.5,-481.5"/>
 <text text-anchor="start" x="505" y="-468.3" font-family="arial" font-size="14.00"> </text>
 </g>
-<!-- oem11pinConnector&#45;&#45;ecuTo11pinWire -->
+<!-- oem11pinConnector&#45;&#45;ecuTo11pinPowerWire -->
 <g id="edge53" class="edge">
-<title>oem11pinConnector:e&#45;&#45;ecuTo11pinWire:w</title>
+<title>oem11pinConnector:e&#45;&#45;ecuTo11pinPowerWire:w</title>
 <path fill="none" stroke="#000000" stroke-width="2" d="M158.5,-310.5C297.5,-315.32 255.33,-516.32 386.5,-511.5"/>
 <path fill="none" stroke="#ff0000" stroke-width="2" d="M158.5,-312.5C295.55,-314.91 253.37,-515.91 386.5,-513.5"/>
 <path fill="none" stroke="#ff0000" stroke-width="2" d="M158.5,-314.5C293.59,-314.5 251.41,-515.5 386.5,-515.5"/>
 <path fill="none" stroke="#ff0000" stroke-width="2" d="M158.5,-316.5C291.63,-314.09 249.45,-515.09 386.5,-517.5"/>
 <path fill="none" stroke="#000000" stroke-width="2" d="M158.5,-318.5C289.67,-313.68 247.5,-514.68 386.5,-519.5"/>
 </g>
-<!-- oem11pinConnector&#45;&#45;ecuTo11pinWire -->
+<!-- oem11pinConnector&#45;&#45;ecuTo11pinPowerWire -->
 <g id="edge55" class="edge">
-<title>oem11pinConnector:e&#45;&#45;ecuTo11pinWire:w</title>
+<title>oem11pinConnector:e&#45;&#45;ecuTo11pinPowerWire:w</title>
 <path fill="none" stroke="#000000" stroke-width="2" d="M158.5,-310.5C289.39,-315.09 263.52,-487.09 386.5,-482.5"/>
 <path fill="none" stroke="#ff0000" stroke-width="2" d="M158.5,-312.5C287.41,-314.8 261.54,-486.8 386.5,-484.5"/>
 <path fill="none" stroke="#ff0000" stroke-width="2" d="M158.5,-314.5C285.43,-314.5 259.57,-486.5 386.5,-486.5"/>
@@ -1072,7 +1072,7 @@
 <polygon fill="#000000" stroke="transparent" points="329.5,-1037.5 329.5,-1039.5 900.5,-1039.5 900.5,-1037.5 329.5,-1037.5"/>
 <text text-anchor="start" x="331.5" y="-1024.3" font-family="arial" font-size="14.00">oem14pinConnector:13:intake air heater 1 control</text>
 <text text-anchor="start" x="633.5" y="-1024.3" font-family="arial" font-size="14.00"> &#160;&#160;&#160;&#160;2:BK &#160;&#160;&#160;</text>
-<text text-anchor="start" x="701.5" y="-1024.3" font-family="arial" font-size="14.00">ecu:29:intake air heater 2 control</text>
+<text text-anchor="start" x="701.5" y="-1024.3" font-family="arial" font-size="14.00">ecu:29:intake air heater 1 control</text>
 <polygon fill="#000000" stroke="transparent" points="329.5,-1016.5 329.5,-1018.5 900.5,-1018.5 900.5,-1016.5 329.5,-1016.5"/>
 <polygon fill="#000000" stroke="transparent" points="329.5,-1014.5 329.5,-1016.5 900.5,-1016.5 900.5,-1014.5 329.5,-1014.5"/>
 <polygon fill="#000000" stroke="transparent" points="329.5,-1012.5 329.5,-1014.5 900.5,-1014.5 900.5,-1012.5 329.5,-1012.5"/>
@@ -1490,18 +1490,18 @@
 <path fill="none" stroke="#000000" stroke-width="2" d="M900,-928.5C989.64,-927 1004.49,-984 1098,-985.5"/>
 <path fill="none" stroke="#000000" stroke-width="2" d="M900,-930.5C987.7,-927.51 1002.56,-984.51 1098,-987.5"/>
 </g>
-<!-- ecuTo11pinWire&#45;&#45;ecu -->
+<!-- ecuTo11pinPowerWire&#45;&#45;ecu -->
 <g id="edge54" class="edge">
-<title>ecuTo11pinWire:e&#45;&#45;ecu:w</title>
+<title>ecuTo11pinPowerWire:e&#45;&#45;ecu:w</title>
 <path fill="none" stroke="#000000" stroke-width="2" d="M842.5,-511.5C1016.12,-516.64 932.05,-800.64 1098,-795.5"/>
 <path fill="none" stroke="#ff0000" stroke-width="2" d="M842.5,-513.5C1014.2,-516.07 930.13,-800.07 1098,-797.5"/>
 <path fill="none" stroke="#ff0000" stroke-width="2" d="M842.5,-515.5C1012.28,-515.5 928.22,-799.5 1098,-799.5"/>
 <path fill="none" stroke="#ff0000" stroke-width="2" d="M842.5,-517.5C1010.37,-514.93 926.3,-798.93 1098,-801.5"/>
 <path fill="none" stroke="#000000" stroke-width="2" d="M842.5,-519.5C1008.45,-514.36 924.38,-798.36 1098,-803.5"/>
 </g>
-<!-- ecuTo11pinWire&#45;&#45;ecu -->
+<!-- ecuTo11pinPowerWire&#45;&#45;ecu -->
 <g id="edge56" class="edge">
-<title>ecuTo11pinWire:e&#45;&#45;ecu:w</title>
+<title>ecuTo11pinPowerWire:e&#45;&#45;ecu:w</title>
 <path fill="none" stroke="#000000" stroke-width="2" d="M842.5,-482.5C1010.6,-487.55 937.61,-754.55 1098,-749.5"/>
 <path fill="none" stroke="#ff0000" stroke-width="2" d="M842.5,-484.5C1008.67,-487.03 935.68,-754.03 1098,-751.5"/>
 <path fill="none" stroke="#ff0000" stroke-width="2" d="M842.5,-486.5C1006.75,-486.5 933.75,-753.5 1098,-753.5"/>
