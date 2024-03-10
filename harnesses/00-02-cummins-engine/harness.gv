@@ -13,7 +13,12 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">DRC20-50P</td>
+   <td balign="left">Deutsch: DRC26-50S04</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Male Plug</td>
    <td balign="left">key 4</td>
    <td balign="left">50-pin</td>
   </tr></table>
@@ -910,7 +915,7 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">1x</td>
-   <td balign="left">20 AWG</td>
+   <td balign="left">16 AWG</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -961,7 +966,7 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">1x</td>
-   <td balign="left">20 AWG</td>
+   <td balign="left">16 AWG</td>
   </tr></table>
  </td></tr>
  <tr><td>
