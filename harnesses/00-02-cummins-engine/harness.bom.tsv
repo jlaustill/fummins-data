@@ -1,12 +1,13 @@
 Id	Description	Qty	Unit	Designators	Manufacturer	MPN
-1	Cable, 1 x 20 AWG	0	m	acClutch+, acPressureSwitch1, acPressureSwitch2, can bus 1+, can bus 1-, enginePositionReferenceSignal, fuelHeater+, fuelShutOff, lowIdleSelect, shield1, vp4412+, vp4412-		
-2	Cable, 2 x 16 AWG	0	m	ecuTo11pinPowerWire		
-3	Cable, 5 x 20 AWG	0	m	ecuTo14pin		
-4	Cable, 6 x 20 AWG	0	m	apsWire		
-5	Connector, ???, ???, 11 pins	1		oem11pinConnector		
-6	Connector, ???, ???, 14 pins	1		oem14pinConnector		
-7	Connector, ???, ???, 2 pins	3		acClutch2pin, acPressureSwitch2pin, fuelHeater2pin		
-8	Connector, AMP, 2.5 CONTACT 9POS SOCKET HOUSING ASSY, 9 pins	1		vp44	AMP	1123006-2
-9	Connector, DRC20-50P, key 4, 50 pins	1		ecu		
+1	Cable, 1 x 16 AWG	0	m	vp4412+, vp4412-		
+2	Cable, 1 x 20 AWG	0	m	acClutch+, acPressureSwitch1, acPressureSwitch2, can bus 1+, can bus 1-, enginePositionReferenceSignal, fuelHeater+, fuelShutOff, lowIdleSelect, shield1		
+3	Cable, 2 x 16 AWG	0	m	ecuTo11pinPowerWire		
+4	Cable, 5 x 20 AWG	0	m	ecuTo14pin		
+5	Cable, 6 x 20 AWG	0	m	apsWire		
+6	Connector, ???, ???, 11 pins	1		oem11pinConnector		
+7	Connector, ???, ???, 14 pins	1		oem14pinConnector		
+8	Connector, ???, ???, 2 pins	3		acClutch2pin, acPressureSwitch2pin, fuelHeater2pin		
+9	Connector, AMP, 2.5 CONTACT 9POS SOCKET HOUSING ASSY, 9 pins	1		vp44	AMP	1123006-2
 10	Connector, Male Plug, 6 pins	1		acceleratorPositionSensor	Deutsch	DT06-6S
-11	Connector, ring terminal, 1 pins	1		engineGroundRingTerminal		
+11	Connector, Male Plug, key 4, 50 pins	1		ecu	Deutsch	DRC26-50S04
+12	Connector, ring terminal, 1 pins	1		engineGroundRingTerminal		

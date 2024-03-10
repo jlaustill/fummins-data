@@ -1,7 +1,9 @@
 connectors:
   ecu:
-    type: DRC20-50P
+    type: Male Plug
     subtype: key 4
+    mpn: DRC26-50S04
+    manufacturer: Deutsch
     pinlabels: [one, two, three, four, five, six, seven, eight, nine,
                 ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen,
                 twenty, twenty one, twenty two, twenty three, twenty four, twenty five, twenty six, twenty seven, twenty eight, intake air heater 1 control,
@@ -75,10 +77,10 @@ cables:
     gauge: 20 AWG
   vp4412+:
     colors: [RD]
-    gauge: 20 AWG
+    gauge: 16 AWG
   vp4412-:
     colors: [BK]
-    gauge: 20 AWG
+    gauge: 16 AWG
   fuelHeater+:
     colors: [RD]
     gauge: 20 AWG
