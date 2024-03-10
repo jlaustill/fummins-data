@@ -464,7 +464,7 @@ graph {
     <td port="p7r">7</td>
    </tr>
    <tr>
-    <td>eight</td>
+    <td>WTS light</td>
     <td port="p8r">8</td>
    </tr>
    <tr>
@@ -961,22 +961,28 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#000000:#000000:#000000:#000000"]
-	oem14pinConnector:p12r:e -- "vp4412-":w1:w
-	"vp4412-":w1:e -- vp44:p6l:w
+	oem14pinConnector:p12r:e -- groundWire:w1:w
+	groundWire:w1:e -- vp44:p6l:w
 	edge [color="#000000:#000000:#000000:#000000:#000000"]
-	oem14pinConnector:p12r:e -- "vp4412-":w1:w
-	"vp4412-":w1:e -- fuelHeater2pin:p2l:w
+	oem14pinConnector:p12r:e -- groundWire:w1:w
+	groundWire:w1:e -- fuelHeater2pin:p2l:w
 	edge [color="#000000:#000000:#000000:#000000:#000000"]
-	oem14pinConnector:p12r:e -- "vp4412-":w1:w
-	"vp4412-":w1:e -- acClutch2pin:p2l:w
+	oem14pinConnector:p12r:e -- groundWire:w1:w
+	groundWire:w1:e -- acClutch2pin:p2l:w
 	edge [color="#000000:#000000:#000000:#000000:#000000"]
-	oem14pinConnector:p12r:e -- "vp4412-":w1:w
-	"vp4412-":w1:e -- engineGroundRingTerminal:p1l:w
-	"vp4412-" [label=<
+	oem14pinConnector:p12r:e -- groundWire:w1:w
+	groundWire:w1:e -- ecu:p30l:w
+	edge [color="#000000:#000000:#000000:#000000:#000000"]
+	oem14pinConnector:p12r:e -- groundWire:w1:w
+	groundWire:w1:e -- ecu:p49l:w
+	edge [color="#000000:#000000:#000000:#000000:#000000"]
+	oem14pinConnector:p12r:e -- groundWire:w1:w
+	groundWire:w1:e -- engineGroundRingTerminal:p1l:w
+	groundWire [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">vp4412-</td>
+   <td balign="left">groundWire</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -1347,6 +1353,9 @@ graph {
 	edge [color="#000000:#000000:#000000:#000000:#000000"]
 	oem14pinConnector:p5r:e -- ecuTo14pinSignalWire:w7:w
 	ecuTo14pinSignalWire:w7:e -- ecu:p38l:w
+	edge [color="#000000:#ff66cc:#ff66cc:#ff66cc:#000000"]
+	oem14pinConnector:p8r:e -- ecuTo14pinSignalWire:w8:w
+	ecuTo14pinSignalWire:w8:e -- ecu:p37l:w
 	ecuTo14pinSignalWire [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -1356,7 +1365,7 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">7x</td>
+   <td balign="left">8x</td>
    <td balign="left">20 AWG</td>
   </tr></table>
  </td></tr>
@@ -1485,6 +1494,24 @@ graph {
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>oem14pinConnector:8:WTS light</td>
+    <td>
+     8:PK
+    </td>
+    <td>ecu:37:WTS light</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w8" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff66cc" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff66cc" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff66cc" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>

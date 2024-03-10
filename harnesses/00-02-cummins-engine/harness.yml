@@ -28,7 +28,7 @@ connectors:
   oem14pinConnector:
     type: ???
     subtype: ???
-    pinlabels: [generator field driver, two, system voltage, ISO 9141 RX, ISO 9141 TX, Vehicle DataLink +, Vehicle DataLink -, eight, A/C high pressure switch ground, tachometer signal, eleven, VP44 ground, intake air heater 1 control, intake air heater 2 control]
+    pinlabels: [generator field driver, two, system voltage, ISO 9141 RX, ISO 9141 TX, Vehicle DataLink +, Vehicle DataLink -, WTS light, A/C high pressure switch ground, tachometer signal, eleven, VP44 ground, intake air heater 1 control, intake air heater 2 control]
   fuelHeater2pin:
     type: ???
     subtype: ???
@@ -80,7 +80,7 @@ cables:
   vp4412+:
     colors: [RD]
     gauge: 16 AWG
-  vp4412-:
+  groundWire:
     colors: [BK]
     gauge: 16 AWG
   fuelHeater+:
@@ -99,7 +99,7 @@ cables:
     colors: [BK, GNBU, BUBK, BKYE, BUWH, BNOG]
     gauge: 20 AWG
   ecuTo14pinSignalWire:
-    colors: [BK, BK, BK, BK, BK, BK, BK]
+    colors: [BK, BK, BK, BK, BK, BK, BK, PK]
     gauge: 20 AWG
   ecuTo11pinPowerWire:
     colors: [RD, RD, PK]
@@ -139,11 +139,11 @@ connections:
     - vp44: [7]
   -
     - oem14pinConnector: [12]
-    - vp4412-: [1]
+    - groundWire: [1]
     - vp44: [6]
   -
     - oem14pinConnector: [ 12 ]
-    - vp4412-: [1]
+    - groundWire: [1]
     - fuelHeater2pin: [2]
   -
     - oem11pinConnector: [ 9 ]
@@ -151,8 +151,12 @@ connections:
     - fuelHeater2pin: [1]
   -
     - oem14pinConnector: [ 12 ]
-    - vp4412-: [1]
+    - groundWire: [1]
     - acClutch2pin: [2]
+  -
+    - oem14pinConnector: [ 12, 12 ]
+    - groundWire: [1,1]
+    - ecu: [30, 49]
   -
     - oem11pinConnector: [ 4 ]
     - acClutch+: [1]
@@ -167,16 +171,16 @@ connections:
     - acPressureSwitch2pin: [2]
   -
     - oem14pinConnector: [12]
-    - vp4412-: [1]
+    - groundWire: [1]
     - engineGroundRingTerminal: [1]
   -
     - ecu: [11,16,25,32,31,1]
     - apsWire: [1,2,3,4,5,6]
     - acceleratorPositionSensor: [1,2,3,4,5,6]
   -
-    - oem14pinConnector: [ 14, 13, 10, 5, 7, 4, 5 ]
-    - ecuTo14pinSignalWire: [1, 2, 3, 4, 5, 6, 7]
-    - ecu: [47, 29, 45, 41, 40, 39, 38]
+    - oem14pinConnector: [ 14, 13, 10, 5, 7, 4, 5, 8 ]
+    - ecuTo14pinSignalWire: [1, 2, 3, 4, 5, 6, 7, 8]
+    - ecu: [47, 29, 45, 41, 40, 39, 38, 37]
   -
     - oem11pinConnector: [3, 3, 1]
     - ecuTo11pinPowerWire: [1, 2, 3]
