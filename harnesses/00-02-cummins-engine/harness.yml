@@ -2,7 +2,7 @@ connectors:
   ecu:
     type: DRC20-50P
     subtype: key 4
-    pinlabels: [one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, foutreen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty, twenty one, twenty two, twenty three, twenty four, twenty five, twenty six, twenty seven, twenty eight, intake air heater 2 control, thirty, thirty one, thirty two, thirty three, thirty four, thirty five, thirty six, thirty seven, thirty eight, thirty nine, Vehicle DataLink -, Vehicle DataLink +, forty two, forty three, forty four, tachometer signal, forty six, intake air heater 2 control, forty eight, forty nine, fifty]
+    pinlabels: [one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, foutreen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty, twenty one, twenty two, twenty three, twenty four, twenty five, twenty six, twenty seven, twenty eight, intake air heater 2 control, thirty, thirty one, thirty two, thirty three, thirty four, thirty five, thirty six, thirty seven, thirty eight, thirty nine, Vehicle DataLink -, Vehicle DataLink +, forty two, forty three, forty four, tachometer signal, forty six, intake air heater 2 control, Constant 12 volt, forty nine, Constant 12 volt]
   vp44:
     type: AMP
     subtype: 2.5 CONTACT 9POS SOCKET HOUSING ASSY
@@ -12,10 +12,10 @@ connectors:
       src: vp44/pr1123006.webp
     notes: https://mopar1973man.com/topic/13322-how-to-extract-terminals-from-a-vp44-connector/
     pinlabels: [CANBUS-, CANBUS+, SHIELD, LOW_IDLE, FUEL_SHUTOFF, 12-, 12+, ENGINE_POSITION_REFERENCE_SIGNAL, UNKNOWN]
-  oem11pin:
+  oem11pinConnector:
     type: ???
     subtype: ???
-    pincount: 11
+    pinlabels: [one, two, Constant 12 volt, four, five, six, seven, eight, nine, ten, eleven]
   oem14pinConnector:
     type: ???
     subtype: ???
@@ -92,6 +92,9 @@ cables:
   ecuTo14pin:
     colors: [BK, BK, BK, BK, BK]
     gauge: 20 AWG
+  ecuTo11pinWire:
+    colors: [RD, RD]
+    gauge: 16 AWG
 
 connections:
   -
@@ -119,7 +122,7 @@ connections:
     - fuelShutOff: [1]
     - vp44: [5]
   -
-    - oem11pin: [7]
+    - oem11pinConnector: [7]
     - vp4412+: [1]
     - vp44: [7]
   -
@@ -131,7 +134,7 @@ connections:
     - vp4412-: [1]
     - fuelHeater2pin: [2]
   -
-    - oem11pin: [ 9 ]
+    - oem11pinConnector: [ 9 ]
     - fuelHeater+: [1]
     - fuelHeater2pin: [1]
   -
@@ -139,11 +142,11 @@ connections:
     - vp4412-: [1]
     - acClutch2pin: [2]
   -
-    - oem11pin: [ 4 ]
+    - oem11pinConnector: [ 4 ]
     - acClutch+: [1]
     - acClutch2pin: [1]
   -
-    - oem11pin: [5]
+    - oem11pinConnector: [5]
     - acPressureSwitch1: [1]
     - acPressureSwitch2pin: [1]
   -
@@ -162,3 +165,7 @@ connections:
     - oem14pinConnector: [ 14, 13, 10, 5, 7 ]
     - ecuTo14pin: [1, 2, 3, 4, 5]
     - ecu: [47, 29, 45, 41, 40]
+  -
+    - oem11pinConnector: [3, 3]
+    - ecuTo11pinWire: [1, 2]
+    - ecu: [48, 50]

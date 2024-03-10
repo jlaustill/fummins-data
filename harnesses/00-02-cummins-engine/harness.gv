@@ -257,7 +257,7 @@ graph {
    </tr>
    <tr>
     <td port="p48l">48</td>
-    <td>forty eight</td>
+    <td>Constant 12 volt</td>
     <td port="p48r">48</td>
    </tr>
    <tr>
@@ -267,7 +267,7 @@ graph {
    </tr>
    <tr>
     <td port="p50l">50</td>
-    <td>fifty</td>
+    <td>Constant 12 volt</td>
     <td port="p50r">50</td>
    </tr>
   </table>
@@ -345,11 +345,11 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	oem11pin [label=<
+	oem11pinConnector [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">oem11pin</td>
+   <td balign="left">oem11pinConnector</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -362,36 +362,47 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
    <tr>
+    <td>one</td>
     <td port="p1r">1</td>
    </tr>
    <tr>
+    <td>two</td>
     <td port="p2r">2</td>
    </tr>
    <tr>
+    <td>Constant 12 volt</td>
     <td port="p3r">3</td>
    </tr>
    <tr>
+    <td>four</td>
     <td port="p4r">4</td>
    </tr>
    <tr>
+    <td>five</td>
     <td port="p5r">5</td>
    </tr>
    <tr>
+    <td>six</td>
     <td port="p6r">6</td>
    </tr>
    <tr>
+    <td>seven</td>
     <td port="p7r">7</td>
    </tr>
    <tr>
+    <td>eight</td>
     <td port="p8r">8</td>
    </tr>
    <tr>
+    <td>nine</td>
     <td port="p9r">9</td>
    </tr>
    <tr>
+    <td>ten</td>
     <td port="p10r">10</td>
    </tr>
    <tr>
+    <td>eleven</td>
     <td port="p11r">11</td>
    </tr>
   </table>
@@ -898,7 +909,7 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#ff0000:#ff0000:#000000"]
-	oem11pin:p7r:e -- "vp4412+":w1:w
+	oem11pinConnector:p7r:e -- "vp4412+":w1:w
 	"vp4412+":w1:e -- vp44:p7l:w
 	"vp4412+" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -917,7 +928,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>oem11pin:7</td>
+    <td>oem11pinConnector:7:seven</td>
     <td>
      1:RD
     </td>
@@ -991,7 +1002,7 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#ff0000:#ff0000:#000000"]
-	oem11pin:p9r:e -- "fuelHeater+":w1:w
+	oem11pinConnector:p9r:e -- "fuelHeater+":w1:w
 	"fuelHeater+":w1:e -- fuelHeater2pin:p1l:w
 	"fuelHeater+" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -1010,7 +1021,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>oem11pin:9</td>
+    <td>oem11pinConnector:9:nine</td>
     <td>
      1:RD
     </td>
@@ -1033,7 +1044,7 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#ff0000:#ff0000:#000000"]
-	oem11pin:p4r:e -- "acClutch+":w1:w
+	oem11pinConnector:p4r:e -- "acClutch+":w1:w
 	"acClutch+":w1:e -- acClutch2pin:p1l:w
 	"acClutch+" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -1052,7 +1063,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>oem11pin:4</td>
+    <td>oem11pinConnector:4:four</td>
     <td>
      1:RD
     </td>
@@ -1075,7 +1086,7 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#000000:#000000:#000000:#000000"]
-	oem11pin:p5r:e -- acPressureSwitch1:w1:w
+	oem11pinConnector:p5r:e -- acPressureSwitch1:w1:w
 	acPressureSwitch1:w1:e -- acPressureSwitch2pin:p1l:w
 	acPressureSwitch1 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -1094,7 +1105,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>oem11pin:5</td>
+    <td>oem11pinConnector:5:five</td>
     <td>
      1:BK
     </td>
@@ -1422,6 +1433,69 @@ graph {
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#ff0000:#ff0000:#ff0000:#000000"]
+	oem11pinConnector:p3r:e -- ecuTo11pinWire:w1:w
+	ecuTo11pinWire:w1:e -- ecu:p48l:w
+	edge [color="#000000:#ff0000:#ff0000:#ff0000:#000000"]
+	oem11pinConnector:p3r:e -- ecuTo11pinWire:w2:w
+	ecuTo11pinWire:w2:e -- ecu:p50l:w
+	ecuTo11pinWire [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">ecuTo11pinWire</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">2x</td>
+   <td balign="left">16 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>oem11pinConnector:3:Constant 12 volt</td>
+    <td>
+     1:RD
+    </td>
+    <td>ecu:48:Constant 12 volt</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>oem11pinConnector:3:Constant 12 volt</td>
+    <td>
+     2:RD
+    </td>
+    <td>ecu:50:Constant 12 volt</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
