@@ -27,142 +27,142 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
    <tr>
     <td port="p1l">1</td>
-    <td>one</td>
+    <td>APPS idle signal</td>
     <td port="p1r">1</td>
    </tr>
    <tr>
     <td port="p2l">2</td>
-    <td>two</td>
+    <td>J1939 +</td>
     <td port="p2r">2</td>
    </tr>
    <tr>
     <td port="p3l">3</td>
-    <td>three</td>
+    <td>crank sensor +5 volts</td>
     <td port="p3r">3</td>
    </tr>
    <tr>
     <td port="p4l">4</td>
-    <td>four</td>
+    <td>crank sensor ground</td>
     <td port="p4r">4</td>
    </tr>
    <tr>
     <td port="p5l">5</td>
-    <td>five</td>
+    <td>Switched +12 volts</td>
     <td port="p5r">5</td>
    </tr>
    <tr>
     <td port="p6l">6</td>
-    <td>six</td>
+    <td>oil pressure sensor signal</td>
     <td port="p6r">6</td>
    </tr>
    <tr>
     <td port="p7l">7</td>
-    <td>seven</td>
+    <td>IAT signal</td>
     <td port="p7r">7</td>
    </tr>
    <tr>
     <td port="p8l">8</td>
-    <td>eight</td>
+    <td>MAP signal</td>
     <td port="p8r">8</td>
    </tr>
    <tr>
     <td port="p9l">9</td>
-    <td>nine</td>
+    <td>CAM sensor signal</td>
     <td port="p9r">9</td>
    </tr>
    <tr>
     <td port="p10l">10</td>
-    <td>ten</td>
+    <td>sensor +5 volts</td>
     <td port="p10r">10</td>
    </tr>
    <tr>
     <td port="p11l">11</td>
-    <td>eleven</td>
+    <td>sensor ground</td>
     <td port="p11r">11</td>
    </tr>
    <tr>
     <td port="p12l">12</td>
-    <td>twelve</td>
+    <td>J1939-</td>
     <td port="p12r">12</td>
    </tr>
    <tr>
     <td port="p13l">13</td>
-    <td>thirteen</td>
+    <td>VP44 datalink+</td>
     <td port="p13r">13</td>
    </tr>
    <tr>
     <td port="p14l">14</td>
-    <td>fourteen</td>
+    <td>coolant sensor signal</td>
     <td port="p14r">14</td>
    </tr>
    <tr>
     <td port="p15l">15</td>
-    <td>fifteen</td>
+    <td>lift pump 12+</td>
     <td port="p15r">15</td>
    </tr>
    <tr>
     <td port="p16l">16</td>
-    <td>sixteen</td>
+    <td>APPS off-idle signal</td>
     <td port="p16r">16</td>
    </tr>
    <tr>
     <td port="p17l">17</td>
-    <td>seventeen</td>
+    <td>crank sensor signal</td>
     <td port="p17r">17</td>
    </tr>
    <tr>
     <td port="p18l">18</td>
-    <td>eighteen</td>
+    <td>engine position reference signal</td>
     <td port="p18r">18</td>
    </tr>
    <tr>
     <td port="p19l">19</td>
-    <td>nineteen</td>
+    <td>NC</td>
     <td port="p19r">19</td>
    </tr>
    <tr>
     <td port="p20l">20</td>
-    <td>twenty</td>
+    <td>NC(used by turbo controller)</td>
     <td port="p20r">20</td>
    </tr>
    <tr>
     <td port="p21l">21</td>
-    <td>twenty one</td>
+    <td>water in fuel sensor signal</td>
     <td port="p21r">21</td>
    </tr>
    <tr>
     <td port="p22l">22</td>
-    <td>twenty two</td>
+    <td>NC</td>
     <td port="p22r">22</td>
    </tr>
    <tr>
     <td port="p23l">23</td>
-    <td>twenty three</td>
+    <td>VP44 datalink-</td>
     <td port="p23r">23</td>
    </tr>
    <tr>
     <td port="p24l">24</td>
-    <td>twenty four</td>
+    <td>NC</td>
     <td port="p24r">24</td>
    </tr>
    <tr>
     <td port="p25l">25</td>
-    <td>twenty five</td>
+    <td>APPS position signal</td>
     <td port="p25r">25</td>
    </tr>
    <tr>
     <td port="p26l">26</td>
-    <td>twenty six</td>
+    <td>PTO status input</td>
     <td port="p26r">26</td>
    </tr>
    <tr>
     <td port="p27l">27</td>
-    <td>twenty seven</td>
+    <td>NC</td>
     <td port="p27r">27</td>
    </tr>
    <tr>
     <td port="p28l">28</td>
-    <td>twenty eight</td>
+    <td>transmission shift modulation signal</td>
     <td port="p28r">28</td>
    </tr>
    <tr>
@@ -172,52 +172,52 @@ graph {
    </tr>
    <tr>
     <td port="p30l">30</td>
-    <td>thirty</td>
+    <td>ground</td>
     <td port="p30r">30</td>
    </tr>
    <tr>
     <td port="p31l">31</td>
-    <td>thirty one</td>
+    <td>APPS +5 volts</td>
     <td port="p31r">31</td>
    </tr>
    <tr>
     <td port="p32l">32</td>
-    <td>thirty two</td>
+    <td>APPS ground</td>
     <td port="p32r">32</td>
    </tr>
    <tr>
     <td port="p33l">33</td>
-    <td>thirty three</td>
+    <td>VP44 fuel shutoff</td>
     <td port="p33r">33</td>
    </tr>
    <tr>
     <td port="p34l">34</td>
-    <td>thirty four</td>
+    <td>low idle select</td>
     <td port="p34r">34</td>
    </tr>
    <tr>
     <td port="p35l">35</td>
-    <td>thirty five</td>
+    <td>lift pump +12 volts</td>
     <td port="p35r">35</td>
    </tr>
    <tr>
     <td port="p36l">36</td>
-    <td>thirty six</td>
+    <td>VP44 power shutoff</td>
     <td port="p36r">36</td>
    </tr>
    <tr>
     <td port="p37l">37</td>
-    <td>thirty seven</td>
+    <td>WTS light</td>
     <td port="p37r">37</td>
    </tr>
    <tr>
     <td port="p38l">38</td>
-    <td>thirty eight</td>
+    <td>ISO 9141 TX</td>
     <td port="p38r">38</td>
    </tr>
    <tr>
     <td port="p39l">39</td>
-    <td>thirty nine</td>
+    <td>ISO 9141 RX</td>
     <td port="p39r">39</td>
    </tr>
    <tr>
@@ -232,17 +232,17 @@ graph {
    </tr>
    <tr>
     <td port="p42l">42</td>
-    <td>forty two</td>
+    <td>J1939 shield</td>
     <td port="p42r">42</td>
    </tr>
    <tr>
     <td port="p43l">43</td>
-    <td>forty three</td>
+    <td>NC</td>
     <td port="p43r">43</td>
    </tr>
    <tr>
     <td port="p44l">44</td>
-    <td>forty four</td>
+    <td>VP44 datalink shield</td>
     <td port="p44r">44</td>
    </tr>
    <tr>
@@ -252,7 +252,7 @@ graph {
    </tr>
    <tr>
     <td port="p46l">46</td>
-    <td>forty six</td>
+    <td>NC</td>
     <td port="p46r">46</td>
    </tr>
    <tr>
@@ -262,20 +262,25 @@ graph {
    </tr>
    <tr>
     <td port="p48l">48</td>
-    <td>Constant 12 volt</td>
+    <td>Constant 12 volts</td>
     <td port="p48r">48</td>
    </tr>
    <tr>
     <td port="p49l">49</td>
-    <td>forty nine</td>
+    <td>ground</td>
     <td port="p49r">49</td>
    </tr>
    <tr>
     <td port="p50l">50</td>
-    <td>Constant 12 volt</td>
+    <td>Constant 12 volts</td>
     <td port="p50r">50</td>
    </tr>
   </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left"><img scale="false" src="connectors/drc26-50s04_SPL.webp"/></td>
+  </tr></table>
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
@@ -367,39 +372,39 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
    <tr>
-    <td>one</td>
+    <td>Switched +12 volts</td>
     <td port="p1r">1</td>
    </tr>
    <tr>
-    <td>two</td>
+    <td>PTO status input</td>
     <td port="p2r">2</td>
    </tr>
    <tr>
-    <td>Constant 12 volt</td>
+    <td>Constant 12 volts</td>
     <td port="p3r">3</td>
    </tr>
    <tr>
-    <td>four</td>
+    <td>A/C clutch</td>
     <td port="p4r">4</td>
    </tr>
    <tr>
-    <td>five</td>
+    <td>A/C high pressure switch</td>
     <td port="p5r">5</td>
    </tr>
    <tr>
-    <td>six</td>
+    <td>transmission shift modulation signal</td>
     <td port="p6r">6</td>
    </tr>
    <tr>
-    <td>seven</td>
+    <td>VP44 +12 volts</td>
     <td port="p7r">7</td>
    </tr>
    <tr>
-    <td>eight</td>
+    <td>VP44 power shutoff signal</td>
     <td port="p8r">8</td>
    </tr>
    <tr>
-    <td>nine</td>
+    <td>fuel heater</td>
     <td port="p9r">9</td>
    </tr>
    <tr>
@@ -431,27 +436,27 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
    <tr>
-    <td>a</td>
+    <td>generator field driver</td>
     <td port="p1r">1</td>
    </tr>
    <tr>
-    <td>b</td>
+    <td>two</td>
     <td port="p2r">2</td>
    </tr>
    <tr>
-    <td>c</td>
+    <td>system voltage</td>
     <td port="p3r">3</td>
    </tr>
    <tr>
-    <td>d</td>
+    <td>ISO 9141 RX</td>
     <td port="p4r">4</td>
    </tr>
    <tr>
-    <td>Vehicle DataLink +</td>
+    <td>ISO 9141 TX</td>
     <td port="p5r">5</td>
    </tr>
    <tr>
-    <td>f</td>
+    <td>Vehicle DataLink +</td>
     <td port="p6r">6</td>
    </tr>
    <tr>
@@ -459,11 +464,11 @@ graph {
     <td port="p7r">7</td>
    </tr>
    <tr>
-    <td>h</td>
+    <td>eight</td>
     <td port="p8r">8</td>
    </tr>
    <tr>
-    <td>i</td>
+    <td>A/C high pressure switch ground</td>
     <td port="p9r">9</td>
    </tr>
    <tr>
@@ -471,11 +476,11 @@ graph {
     <td port="p10r">10</td>
    </tr>
    <tr>
-    <td>k</td>
+    <td>eleven</td>
     <td port="p11r">11</td>
    </tr>
    <tr>
-    <td>l</td>
+    <td>VP44 ground</td>
     <td port="p12r">12</td>
    </tr>
    <tr>
@@ -681,7 +686,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>ecu:13:thirteen</td>
+    <td>ecu:13:VP44 datalink+</td>
     <td>
      1:YE
     </td>
@@ -723,7 +728,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>ecu:23:twenty three</td>
+    <td>ecu:23:VP44 datalink-</td>
     <td>
      1:GN
     </td>
@@ -765,7 +770,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>ecu:44:forty four</td>
+    <td>ecu:44:VP44 datalink shield</td>
     <td>
      1:BK
     </td>
@@ -807,7 +812,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>ecu:18:eighteen</td>
+    <td>ecu:18:engine position reference signal</td>
     <td>
      1:PK
     </td>
@@ -849,7 +854,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>ecu:34:thirty four</td>
+    <td>ecu:34:low idle select</td>
     <td>
      1:BG
     </td>
@@ -891,7 +896,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>ecu:33:thirty three</td>
+    <td>ecu:33:VP44 fuel shutoff</td>
     <td>
      1:GD
     </td>
@@ -933,7 +938,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>oem11pinConnector:7:seven</td>
+    <td>oem11pinConnector:7:VP44 +12 volts</td>
     <td>
      1:RD
     </td>
@@ -984,7 +989,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>oem14pinConnector:12:l</td>
+    <td>oem14pinConnector:12:VP44 ground</td>
     <td>
      1:BK
     </td>
@@ -1026,7 +1031,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>oem11pinConnector:9:nine</td>
+    <td>oem11pinConnector:9:fuel heater</td>
     <td>
      1:RD
     </td>
@@ -1068,7 +1073,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>oem11pinConnector:4:four</td>
+    <td>oem11pinConnector:4:A/C clutch</td>
     <td>
      1:RD
     </td>
@@ -1110,7 +1115,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>oem11pinConnector:5:five</td>
+    <td>oem11pinConnector:5:A/C high pressure switch</td>
     <td>
      1:BK
     </td>
@@ -1152,7 +1157,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>oem14pinConnector:9:i</td>
+    <td>oem14pinConnector:9:A/C high pressure switch ground</td>
     <td>
      1:BK
     </td>
@@ -1209,7 +1214,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>ecu:11:eleven</td>
+    <td>ecu:11:sensor ground</td>
     <td>
      1:BK
     </td>
@@ -1227,7 +1232,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>ecu:16:sixteen</td>
+    <td>ecu:16:APPS off-idle signal</td>
     <td>
      2:GNBU
     </td>
@@ -1245,7 +1250,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>ecu:25:twenty five</td>
+    <td>ecu:25:APPS position signal</td>
     <td>
      3:BUBK
     </td>
@@ -1263,7 +1268,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>ecu:32:thirty two</td>
+    <td>ecu:32:APPS ground</td>
     <td>
      4:BKYE
     </td>
@@ -1281,7 +1286,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>ecu:31:thirty one</td>
+    <td>ecu:31:APPS +5 volts</td>
     <td>
      5:BUWH
     </td>
@@ -1299,7 +1304,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>ecu:1:one</td>
+    <td>ecu:1:APPS idle signal</td>
     <td>
      6:BNOG
     </td>
@@ -1322,30 +1327,36 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#000000:#000000:#000000:#000000"]
-	oem14pinConnector:p14r:e -- ecuTo14pin:w1:w
-	ecuTo14pin:w1:e -- ecu:p47l:w
+	oem14pinConnector:p14r:e -- ecuTo14pinSignalWire:w1:w
+	ecuTo14pinSignalWire:w1:e -- ecu:p47l:w
 	edge [color="#000000:#000000:#000000:#000000:#000000"]
-	oem14pinConnector:p13r:e -- ecuTo14pin:w2:w
-	ecuTo14pin:w2:e -- ecu:p29l:w
+	oem14pinConnector:p13r:e -- ecuTo14pinSignalWire:w2:w
+	ecuTo14pinSignalWire:w2:e -- ecu:p29l:w
 	edge [color="#000000:#000000:#000000:#000000:#000000"]
-	oem14pinConnector:p10r:e -- ecuTo14pin:w3:w
-	ecuTo14pin:w3:e -- ecu:p45l:w
+	oem14pinConnector:p10r:e -- ecuTo14pinSignalWire:w3:w
+	ecuTo14pinSignalWire:w3:e -- ecu:p45l:w
 	edge [color="#000000:#000000:#000000:#000000:#000000"]
-	oem14pinConnector:p5r:e -- ecuTo14pin:w4:w
-	ecuTo14pin:w4:e -- ecu:p41l:w
+	oem14pinConnector:p5r:e -- ecuTo14pinSignalWire:w4:w
+	ecuTo14pinSignalWire:w4:e -- ecu:p41l:w
 	edge [color="#000000:#000000:#000000:#000000:#000000"]
-	oem14pinConnector:p7r:e -- ecuTo14pin:w5:w
-	ecuTo14pin:w5:e -- ecu:p40l:w
-	ecuTo14pin [label=<
+	oem14pinConnector:p7r:e -- ecuTo14pinSignalWire:w5:w
+	ecuTo14pinSignalWire:w5:e -- ecu:p40l:w
+	edge [color="#000000:#000000:#000000:#000000:#000000"]
+	oem14pinConnector:p4r:e -- ecuTo14pinSignalWire:w6:w
+	ecuTo14pinSignalWire:w6:e -- ecu:p39l:w
+	edge [color="#000000:#000000:#000000:#000000:#000000"]
+	oem14pinConnector:p5r:e -- ecuTo14pinSignalWire:w7:w
+	ecuTo14pinSignalWire:w7:e -- ecu:p38l:w
+	ecuTo14pinSignalWire [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">ecuTo14pin</td>
+   <td balign="left">ecuTo14pinSignalWire</td>
   </tr></table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">5x</td>
+   <td balign="left">7x</td>
    <td balign="left">20 AWG</td>
   </tr></table>
  </td></tr>
@@ -1407,7 +1418,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>oem14pinConnector:5:Vehicle DataLink +</td>
+    <td>oem14pinConnector:5:ISO 9141 TX</td>
     <td>
      4:BK
     </td>
@@ -1442,6 +1453,42 @@ graph {
      </table>
     </td>
    </tr>
+   <tr>
+    <td>oem14pinConnector:4:ISO 9141 RX</td>
+    <td>
+     6:BK
+    </td>
+    <td>ecu:39:ISO 9141 RX</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w6" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>oem14pinConnector:5:ISO 9141 TX</td>
+    <td>
+     7:BK
+    </td>
+    <td>ecu:38:ISO 9141 TX</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w7" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
    <tr><td>&nbsp;</td></tr>
   </table>
  </td></tr>
@@ -1453,6 +1500,9 @@ graph {
 	edge [color="#000000:#ff0000:#ff0000:#ff0000:#000000"]
 	oem11pinConnector:p3r:e -- ecuTo11pinPowerWire:w2:w
 	ecuTo11pinPowerWire:w2:e -- ecu:p50l:w
+	edge [color="#000000:#ff66cc:#ff66cc:#ff66cc:#000000"]
+	oem11pinConnector:p1r:e -- ecuTo11pinPowerWire:w3:w
+	ecuTo11pinPowerWire:w3:e -- ecu:p5l:w
 	ecuTo11pinPowerWire [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -1462,7 +1512,7 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">2x</td>
+   <td balign="left">3x</td>
    <td balign="left">16 AWG</td>
   </tr></table>
  </td></tr>
@@ -1470,11 +1520,11 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>oem11pinConnector:3:Constant 12 volt</td>
+    <td>oem11pinConnector:3:Constant 12 volts</td>
     <td>
      1:RD
     </td>
-    <td>ecu:48:Constant 12 volt</td>
+    <td>ecu:48:Constant 12 volts</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="10">
@@ -1488,11 +1538,11 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>oem11pinConnector:3:Constant 12 volt</td>
+    <td>oem11pinConnector:3:Constant 12 volts</td>
     <td>
      2:RD
     </td>
-    <td>ecu:50:Constant 12 volt</td>
+    <td>ecu:50:Constant 12 volts</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="10">
@@ -1501,6 +1551,87 @@ graph {
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>oem11pinConnector:1:Switched +12 volts</td>
+    <td>
+     3:PK
+    </td>
+    <td>ecu:5:Switched +12 volts</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff66cc" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff66cc" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff66cc" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#000000:#000000:#000000:#000000"]
+	oem11pinConnector:p6r:e -- ecuTo11pinSignalWire:w1:w
+	ecuTo11pinSignalWire:w1:e -- ecu:p28l:w
+	edge [color="#000000:#000000:#000000:#000000:#000000"]
+	oem11pinConnector:p2r:e -- ecuTo11pinSignalWire:w2:w
+	ecuTo11pinSignalWire:w2:e -- ecu:p26l:w
+	ecuTo11pinSignalWire [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">ecuTo11pinSignalWire</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">2x</td>
+   <td balign="left">20 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>oem11pinConnector:6:transmission shift modulation signal</td>
+    <td>
+     1:BK
+    </td>
+    <td>ecu:28:transmission shift modulation signal</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>oem11pinConnector:2:PTO status input</td>
+    <td>
+     2:BK
+    </td>
+    <td>ecu:26:PTO status input</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>

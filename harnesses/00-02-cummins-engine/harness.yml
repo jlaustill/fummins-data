@@ -4,12 +4,14 @@ connectors:
     subtype: key 4
     mpn: DRC26-50S04
     manufacturer: Deutsch
-    pinlabels: [one, two, three, four, five, six, seven, eight, nine,
-                ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen,
-                twenty, twenty one, twenty two, twenty three, twenty four, twenty five, twenty six, twenty seven, twenty eight, intake air heater 1 control,
-                thirty, thirty one, thirty two, thirty three, thirty four, thirty five, thirty six, thirty seven, thirty eight, thirty nine,
-                Vehicle DataLink -, Vehicle DataLink +, forty two, forty three, forty four, tachometer signal, forty six, intake air heater 2 control, Constant 12 volt, forty nine,
-                Constant 12 volt]
+    image:
+      src: connectors/drc26-50s04_SPL.webp
+    pinlabels: [APPS idle signal, J1939 +, crank sensor +5 volts, crank sensor ground, Switched +12 volts, oil pressure sensor signal, IAT signal, MAP signal, CAM sensor signal,
+                sensor +5 volts, sensor ground, J1939-, VP44 datalink+, coolant sensor signal, lift pump 12+, APPS off-idle signal, crank sensor signal, engine position reference signal, NC,
+                NC(used by turbo controller), water in fuel sensor signal, NC, VP44 datalink-, NC, APPS position signal, PTO status input, NC, transmission shift modulation signal, intake air heater 1 control,
+                ground, APPS +5 volts, APPS ground, VP44 fuel shutoff, low idle select, lift pump +12 volts, VP44 power shutoff, WTS light, ISO 9141 TX, ISO 9141 RX,
+                Vehicle DataLink -, Vehicle DataLink +, J1939 shield, NC, VP44 datalink shield, tachometer signal, NC, intake air heater 2 control, Constant 12 volts, ground,
+                Constant 12 volts]
   vp44:
     type: AMP
     subtype: 2.5 CONTACT 9POS SOCKET HOUSING ASSY
@@ -22,11 +24,11 @@ connectors:
   oem11pinConnector:
     type: ???
     subtype: ???
-    pinlabels: [one, two, Constant 12 volt, four, five, six, seven, eight, nine, ten, eleven]
+    pinlabels: [Switched +12 volts, PTO status input, Constant 12 volts, A/C clutch, A/C high pressure switch, transmission shift modulation signal, VP44 +12 volts, VP44 power shutoff signal, fuel heater, ten, eleven]
   oem14pinConnector:
     type: ???
     subtype: ???
-    pinlabels: [a, b, c, d, Vehicle DataLink +, f, Vehicle DataLink -, h, i, tachometer signal, k, l, intake air heater 1 control, intake air heater 2 control]
+    pinlabels: [generator field driver, two, system voltage, ISO 9141 RX, ISO 9141 TX, Vehicle DataLink +, Vehicle DataLink -, eight, A/C high pressure switch ground, tachometer signal, eleven, VP44 ground, intake air heater 1 control, intake air heater 2 control]
   fuelHeater2pin:
     type: ???
     subtype: ???
@@ -96,12 +98,15 @@ cables:
   apsWire:
     colors: [BK, GNBU, BUBK, BKYE, BUWH, BNOG]
     gauge: 20 AWG
-  ecuTo14pin:
-    colors: [BK, BK, BK, BK, BK]
+  ecuTo14pinSignalWire:
+    colors: [BK, BK, BK, BK, BK, BK, BK]
     gauge: 20 AWG
   ecuTo11pinPowerWire:
-    colors: [RD, RD]
+    colors: [RD, RD, PK]
     gauge: 16 AWG
+  ecuTo11pinSignalWire:
+    colors: [BK, BK]
+    gauge: 20 AWG
 
 connections:
   -
@@ -169,10 +174,14 @@ connections:
     - apsWire: [1,2,3,4,5,6]
     - acceleratorPositionSensor: [1,2,3,4,5,6]
   -
-    - oem14pinConnector: [ 14, 13, 10, 5, 7 ]
-    - ecuTo14pin: [1, 2, 3, 4, 5]
-    - ecu: [47, 29, 45, 41, 40]
+    - oem14pinConnector: [ 14, 13, 10, 5, 7, 4, 5 ]
+    - ecuTo14pinSignalWire: [1, 2, 3, 4, 5, 6, 7]
+    - ecu: [47, 29, 45, 41, 40, 39, 38]
   -
-    - oem11pinConnector: [3, 3]
-    - ecuTo11pinPowerWire: [1, 2]
-    - ecu: [48, 50]
+    - oem11pinConnector: [3, 3, 1]
+    - ecuTo11pinPowerWire: [1, 2, 3]
+    - ecu: [48, 50, 5]
+  -
+    - oem11pinConnector: [6, 2]
+    - ecuTo11pinSignalWire: [1, 2]
+    - ecu: [28, 26]
