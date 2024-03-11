@@ -48,6 +48,36 @@ connectors:
       src: ringTerminal/61DLI9gydlL.jpg
       width: 50
       height: 50
+  J1939Connector:
+    type: Weather Pack Male Plug
+    mpn: 12020827
+    manufacturer: Aptiv
+    pinlabels: [A, B, C]
+    image:
+      src: connectors/12020827.jpeg
+      width: 50
+  coolantTemperatureSensor:
+    type: Metripack Male Plug
+    mpn: 12162193
+    manufacturer: Delphi
+    image:
+      src: connectors/150.2_2-female.webp
+    pinlabels: [A, B]
+  camshaftSensor:
+    type: Metripack Male Plug
+    mpn: 12162280
+    manufacturer: Delphi
+    pinlabels: [A, B, C]
+  liftPump:
+    type: male plug
+    mpn: ???
+    manufacturer: ???
+    pinlabels: ["1", "2"]
+  waterInFuelSensor:
+    type: male plug
+    mpn: ???
+    manufacturer: ???
+    pinlabels: [A, B]
   acceleratorPositionSensor:
     type: Male Plug
     manufacturer: Deutsch
@@ -105,6 +135,18 @@ cables:
     colors: [RD, RD, PK]
     gauge: 16 AWG
   ecuTo11pinSignalWire:
+    colors: [BK, BK]
+    gauge: 20 AWG
+  J1939Cable:
+    colors: [YEBU, YEGN, BKWH]
+  coolantTemperatureSensorCable:
+    colors: [OGBK, BKBU]
+  camshaftSensorCable:
+    colors: [YE, BK, VTWH]
+  liftPumpPowerCable:
+    colors: [RD, RD]
+    gauge: 20 AWG
+  waterInFuelSensorCable:
     colors: [BK, BK]
     gauge: 20 AWG
 
@@ -189,3 +231,27 @@ connections:
     - oem11pinConnector: [6, 2]
     - ecuTo11pinSignalWire: [1, 2]
     - ecu: [28, 26]
+  -
+    - ecu: [2, 12, 42]
+    - J1939Cable: [1, 2, 3]
+    - J1939Connector: [1, 2, 3]
+  -
+    - ecu: [14, 11]
+    - coolantTemperatureSensorCable: [1, 2]
+    - coolantTemperatureSensor: [1, 2]
+  -
+    - ecu: [10, 11, 9]
+    - camshaftSensorCable: [1, 2, 3]
+    - camshaftSensor: [1, 2, 3]
+  -
+    - ecu: [15, 35]
+    - liftPumpPowerCable: [1, 2]
+    - liftPump: [1, 1]
+  -
+    - oem14pinConnector: [12]
+    - groundWire: [1]
+    - liftPump: [2]
+  -
+    - ecu: [11, 21]
+    - waterInFuelSensorCable: [1, 2]
+    - waterInFuelSensor: [1, 2]

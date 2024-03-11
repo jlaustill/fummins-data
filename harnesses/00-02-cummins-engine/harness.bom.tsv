@@ -1,14 +1,20 @@
 Id	Description	Qty	Unit	Designators	Manufacturer	MPN
 1	Cable, 1 x 16 AWG	0	m	groundWire, vp4412+		
 2	Cable, 1 x 20 AWG	0	m	acClutch+, acPressureSwitch1, acPressureSwitch2, can bus 1+, can bus 1-, enginePositionReferenceSignal, fuelHeater+, fuelShutOff, lowIdleSelect, shield1		
-3	Cable, 2 x 20 AWG	0	m	ecuTo11pinSignalWire		
-4	Cable, 3 x 16 AWG	0	m	ecuTo11pinPowerWire		
-5	Cable, 6 x 20 AWG	0	m	apsWire		
-6	Cable, 8 x 20 AWG	0	m	ecuTo14pinSignalWire		
-7	Connector, ???, ???, 11 pins	1		oem11pinConnector		
-8	Connector, ???, ???, 14 pins	1		oem14pinConnector		
-9	Connector, ???, ???, 2 pins	3		acClutch2pin, acPressureSwitch2pin, fuelHeater2pin		
-10	Connector, AMP, 2.5 CONTACT 9POS SOCKET HOUSING ASSY, 9 pins	1		vp44	AMP	1123006-2
-11	Connector, Male Plug, 6 pins	1		acceleratorPositionSensor	Deutsch	DT06-6S
-12	Connector, Male Plug, key 4, 50 pins	1		ecu	Deutsch	DRC26-50S04
-13	Connector, ring terminal, 1 pins	1		engineGroundRingTerminal		
+3	Cable, 2 wires	0	m	coolantTemperatureSensorCable		
+4	Cable, 2 x 20 AWG	0	m	ecuTo11pinSignalWire, liftPumpPowerCable, waterInFuelSensorCable		
+5	Cable, 3 wires	0	m	J1939Cable, camshaftSensorCable		
+6	Cable, 3 x 16 AWG	0	m	ecuTo11pinPowerWire		
+7	Cable, 6 x 20 AWG	0	m	apsWire		
+8	Cable, 8 x 20 AWG	0	m	ecuTo14pinSignalWire		
+9	Connector, ???, ???, 11 pins	1		oem11pinConnector		
+10	Connector, ???, ???, 14 pins	1		oem14pinConnector		
+11	Connector, ???, ???, 2 pins	3		acClutch2pin, acPressureSwitch2pin, fuelHeater2pin		
+12	Connector, AMP, 2.5 CONTACT 9POS SOCKET HOUSING ASSY, 9 pins	1		vp44	AMP	1123006-2
+13	Connector, Male Plug, 6 pins	1		acceleratorPositionSensor	Deutsch	DT06-6S
+14	Connector, Male Plug, key 4, 50 pins	1		ecu	Deutsch	DRC26-50S04
+15	Connector, Metripack Male Plug, 2 pins	1		coolantTemperatureSensor	Delphi	12162193
+16	Connector, Metripack Male Plug, 3 pins	1		camshaftSensor	Delphi	12162280
+17	Connector, Weather Pack Male Plug, 3 pins	1		J1939Connector	Aptiv	12020827
+18	Connector, male plug, 2 pins	2		liftPump, waterInFuelSensor	???	???
+19	Connector, ring terminal, 1 pins	1		engineGroundRingTerminal		
