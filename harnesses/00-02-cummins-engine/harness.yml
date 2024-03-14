@@ -12,6 +12,7 @@ connectors:
                 ground, APPS +5 volts, APPS ground, VP44 fuel shutoff, low idle select, lift pump +12 volts, VP44 power shutoff, WTS light, ISO 9141 TX, ISO 9141 RX,
                 Vehicle DataLink -, Vehicle DataLink +, J1939 shield, NC, VP44 datalink shield, tachometer signal, NC, intake air heater 2 control, Constant 12 volts, ground,
                 Constant 12 volts]
+    notes: not sure what pins 22, 24, and 43 do on the 01-02...
   vp44:
     type: AMP
     subtype: 2.5 CONTACT 9POS SOCKET HOUSING ASSY
@@ -24,7 +25,7 @@ connectors:
   oem11pinConnector:
     type: ???
     subtype: ???
-    pinlabels: [Switched +12 volts, PTO status input, Constant 12 volts, A/C clutch, A/C high pressure switch, transmission shift modulation signal, VP44 +12 volts, VP44 power shutoff signal, fuel heater, ten, eleven]
+    pinlabels: [Switched +12 volts, PTO status input, Constant 12 volts, A/C clutch, A/C high pressure switch, transmission shift modulation signal, VP44 +12 volts, VP44 power shutoff signal, fuel heater, ground, eleven]
   oem14pinConnector:
     type: ???
     subtype: ???
@@ -75,18 +76,30 @@ connectors:
     image:
       src: connectors/150.2_2-female.webp
     pinlabels: [A, B]
+  camshaftSensorEarlyModels:
+    type: Metripack Male Plug
+    mpn: 12162280
+    manufacturer: Delphi
+    pinlabels: [5volts, ground, signal]
+    image:
+      src: connectors/12162280.jpeg
+    notes: only on 98.5-00
   camshaftSensor:
     type: Metripack Male Plug
     mpn: 12162280
     manufacturer: Delphi
-    pinlabels: [A, B, C]
+    pinlabels: [5volts, ground, signal]
     image:
       src: connectors/12162280.jpeg
+    notes: goes to crank sensor on 98.5-00
   liftPump:
-    type: male plug
-    mpn: ???
-    manufacturer: ???
-    pinlabels: ["1", "2"]
+    type: Male Plug
+    manufacturer: Deutsch
+    mpn: DT06-2S
+    image:
+      src: connectors/DT06-2S.webp
+      width: 50
+    pinlabels: [12Volts, ground]
   waterInFuelSensor:
     type: male plug
     mpn: ???
@@ -96,9 +109,15 @@ connectors:
     type: Metripack Male Plug
     mpn: 12162280
     manufacturer: Delphi
-    pinlabels: [A, B, C]
+    pinlabels: [5volts, ground, signal]
     image:
       src: connectors/12162280.jpeg
+  intakeAirTemperature:
+    type: Male Plug
+    pinlabels: [ground, signal]
+  manifoldAirPressureSensor:
+    type: Male Plug
+    pinlabels: [5volts, ground, signal]
   acceleratorPositionSensor:
     type: Male Plug
     manufacturer: Deutsch
@@ -110,98 +129,68 @@ connectors:
     pinlabels: [sensor ground, off idle signal, position signal, position return, position +5 volt supply, idle signal]
 
 cables:
-  can bus 1+:
-    colors: [YE]
-    gauge: 20 AWG
-  can bus 1-:
-    colors: [GN]
-    gauge: 20 AWG
-  shield1:
-    colors: [BK]
-    gauge: 20 AWG
-  enginePositionReferenceSignal:
-    colors: [PK]
-    gauge: 20 AWG
-  lowIdleSelect:
-    colors: [BG]
-    gauge: 20 AWG
-  fuelShutOff:
-    colors: [GD]
-    gauge: 20 AWG
   vp4412+:
-    colors: [RD]
+    colors: [RDGN]
     gauge: 16 AWG
   groundWire:
-    colors: [BK]
+    colors: [BKWH]
     gauge: 16 AWG
+  sensorGroundWire:
+    colors: [BKBU]
+    gauge: 20 AWG
   fuelHeater+:
-    colors: [RD]
-    gauge: 20 AWG
+    colors: [RDBK]
+    gauge: 16 AWG
   acClutch+:
-    colors: [RD]
+    colors: [GNWH]
     gauge: 20 AWG
-  acPressureSwitch1:
-    colors: [BK]
-    gauge: 20 AWG
-  acPressureSwitch2:
-    colors: [BK]
+  acPressureSwitchCable:
+    colors: [GNWH, BU]
     gauge: 20 AWG
   apsWire:
-    colors: [BK, GNBU, BUBK, BKYE, BUWH, BNOG]
+    colors: [GNBU, BUBK, BKYE, BUWH, BNOG]
     gauge: 20 AWG
   ecuTo14pinSignalWire:
-    colors: [BK, BK, BK, BK, BK, BK, BK, PK]
+    colors: [OGBK, YEBK, GYBK, VTBK, WHBK, GN, PKBU, OGBK, RDGN, YERD]
     gauge: 20 AWG
   ecuTo11pinPowerWire:
-    colors: [RD, RD, PK]
+    colors: [RDWH, RDWH, GNBK]
     gauge: 16 AWG
-  ecuTo11pinSignalWire:
-    colors: [BK, BK]
+  ecuTo11pinSignalCable:
+    colors: [OGBU, OG, BNWH, WHPK]
     gauge: 20 AWG
   J1939Cable:
     colors: [YEBU, YEGN, BKWH]
   coolantTemperatureSensorCable:
-    colors: [OGBK, BKBU]
-  camshaftSensorCable:
+    colors: [OGBK]
+  camshaftSensorCableEarlyModels:
     colors: [VTWH]
   liftPumpPowerCable:
-    colors: [RD, RD]
+    colors: [YEWH, YEWH]
     gauge: 20 AWG
   waterInFuelSensorCable:
-    colors: [BK, BK]
+    colors: [GNRD]
     gauge: 20 AWG
   alternatorCable:
-    colors: [YE, RD, BK]
+    colors: [GN, GN, BK]
   oilPressureSignalWire:
     colors: [GYBK]
   sensor5Volts:
     colors: [OG]
+  vp44SignalCable:
+    colors: [BK, WH, OGBK, VTPK, GNVT, GN]
+  camshaftSensorCable:
+    colors: [BG, BK, VTWH]
+  intakeAirTemperatureWire:
+    colors: [BKBU]
+  manifoldAirPressureSensorWire:
+    colors: [IVRD]
 
 connections:
   -
-    - ecu: [13]
-    - can bus 1+: [1]
-    - vp44: [2]
-  -
-    - ecu: [23]
-    - can bus 1-: [1]
-    - vp44: [1]
-  -
-    - ecu: [44]
-    - shield1: [1]
-    - vp44: [3]
-  -
-    - ecu: [18]
-    - enginePositionReferenceSignal: [1]
-    - vp44: [8]
-  -
-    - ecu: [34]
-    - lowIdleSelect: [1]
-    - vp44: [4]
-  -
-    - ecu: [33]
-    - fuelShutOff: [1]
-    - vp44: [5]
+    - ecu: [23, 13, 44, 34, 33, 18]
+    - vp44SignalCable: [1, 2, 3, 4, 5, 6]
+    - vp44: [1, 2, 3, 4, 5, 8]
   -
     - oem11pinConnector: [7]
     - vp4412+: [1]
@@ -210,6 +199,10 @@ connections:
     - oem14pinConnector: [12]
     - groundWire: [1]
     - vp44: [6]
+  -
+    - oem14pinConnector: [12]
+    - groundWire: [1]
+    - oem11pinConnector: [10]
   -
     - oem14pinConnector: [ 12 ]
     - groundWire: [1]
@@ -232,52 +225,60 @@ connections:
     - acClutch2pin: [1]
   -
     - oem11pinConnector: [5]
-    - acPressureSwitch1: [1]
+    - acPressureSwitchCable: [1]
     - acPressureSwitch2pin: [1]
   -
     - oem14pinConnector: [9]
-    - acPressureSwitch2: [1]
+    - acPressureSwitchCable: [2]
     - acPressureSwitch2pin: [2]
   -
     - oem14pinConnector: [12]
     - groundWire: [1]
     - engineGroundRingTerminal: [1]
   -
-    - ecu: [11,16,25,32,31,1]
-    - apsWire: [1,2,3,4,5,6]
-    - acceleratorPositionSensor: [1,2,3,4,5,6]
+    - ecu: [16,25,32,31,1]
+    - apsWire: [1,2,3,4,5]
+    - acceleratorPositionSensor: [2,3,4,5,6]
   -
-    - oem14pinConnector: [ 14, 13, 10, 5, 7, 4, 5, 8 ]
-    - ecuTo14pinSignalWire: [1, 2, 3, 4, 5, 6, 7, 8]
-    - ecu: [47, 29, 45, 41, 40, 39, 38, 37]
+    - ecu: [11]
+    - sensorGroundWire: [1]
+    - acceleratorPositionSensor: [1]
+  -
+    - oem14pinConnector: [ 14, 13, 10, 6, 7, 4, 5, 8, 2, 11]
+    - ecuTo14pinSignalWire: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    - ecu: [47, 29, 45, 41, 40, 39, 38, 37, 22, 24]
   -
     - oem11pinConnector: [3, 3, 1]
     - ecuTo11pinPowerWire: [1, 2, 3]
     - ecu: [48, 50, 5]
   -
-    - oem11pinConnector: [6, 2]
-    - ecuTo11pinSignalWire: [1, 2]
-    - ecu: [28, 26]
+    - oem11pinConnector: [6, 2, 8, 11]
+    - ecuTo11pinSignalCable: [1, 2, 3, 4]
+    - ecu: [28, 26, 36, 43]
   -
     - ecu: [2, 12, 42]
     - J1939Cable: [1, 2, 3]
     - J1939Connector: [1, 2, 3]
   -
-    - ecu: [14, 11]
-    - coolantTemperatureSensorCable: [1, 2]
-    - coolantTemperatureSensor: [1, 2]
+    - ecu: [14]
+    - coolantTemperatureSensorCable: [1]
+    - coolantTemperatureSensor: [2]
   -
-    - ecu: [9]
+    - ecu: [11]
+    - sensorGroundWire: [1]
+    - coolantTemperatureSensor: [1]
+  -
+    - ecu: [10]
     - sensor5Volts: [1]
-    - camshaftSensor: [1]
+    - camshaftSensorEarlyModels: [1]
+  -
+    - ecu: [11]
+    - sensorGroundWire: [1]
+    - camshaftSensorEarlyModels: [2]
   -
     - ecu: [9]
-    - groundWire: [1]
-    - camshaftSensor: [1]
-  -
-    - ecu: [9]
-    - camshaftSensorCable: [1]
-    - camshaftSensor: [3]
+    - camshaftSensorCableEarlyModels: [1]
+    - camshaftSensorEarlyModels: [3]
   -
     - ecu: [15, 35]
     - liftPumpPowerCable: [1, 2]
@@ -287,9 +288,13 @@ connections:
     - groundWire: [1]
     - liftPump: [2]
   -
-    - ecu: [11, 21]
-    - waterInFuelSensorCable: [1, 2]
-    - waterInFuelSensor: [1, 2]
+    - ecu: [21]
+    - waterInFuelSensorCable: [1]
+    - waterInFuelSensor: [1]
+  -
+    - ecu: [11]
+    - sensorGroundWire: [1]
+    - waterInFuelSensor: [2]
   -
     - oem14pinConnector: [1, 3]
     - alternatorCable: [1, 2]
@@ -301,13 +306,37 @@ connections:
   -
     - ecu: [6]
     - oilPressureSignalWire: [1]
-    - oilPressureSensor: [1]
+    - oilPressureSensor: [3]
   -
     - ecu: [11]
-    - groundWire: [1]
+    - sensorGroundWire: [1]
     - oilPressureSensor: [2]
   -
-    - ecu: [6]
+    - ecu: [10]
     - sensor5Volts: [1]
-    - oilPressureSensor: [3]
+    - oilPressureSensor: [1]
+  -
+    - ecu: [17,4,3]
+    - camshaftSensorCable: [1, 2, 3]
+    - camshaftSensor: [3, 2, 1]
+  -
+    - ecu: [7]
+    - intakeAirTemperatureWire: [1]
+    - intakeAirTemperature: [2]
+  -
+    - ecu: [11]
+    - sensorGroundWire: [1]
+    - intakeAirTemperature: [1]
+  -
+    - ecu: [8]
+    - manifoldAirPressureSensorWire: [1]
+    - manifoldAirPressureSensor: [3]
+  -
+    - ecu: [11]
+    - sensorGroundWire: [1]
+    - manifoldAirPressureSensor: [2]
+  -
+    - ecu: [10]
+    - sensor5Volts: [1]
+    - manifoldAirPressureSensor: [1]
 

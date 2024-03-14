@@ -1,22 +1,26 @@
 Id	Description	Qty	Unit	Designators	Manufacturer	MPN
-1	Cable, 1 wires	0	m	camshaftSensorCable, oilPressureSignalWire, sensor5Volts		
-2	Cable, 1 x 16 AWG	0	m	groundWire, vp4412+		
-3	Cable, 1 x 20 AWG	0	m	acClutch+, acPressureSwitch1, acPressureSwitch2, can bus 1+, can bus 1-, enginePositionReferenceSignal, fuelHeater+, fuelShutOff, lowIdleSelect, shield1		
-4	Cable, 2 wires	0	m	coolantTemperatureSensorCable		
-5	Cable, 2 x 20 AWG	0	m	ecuTo11pinSignalWire, liftPumpPowerCable, waterInFuelSensorCable		
-6	Cable, 3 wires	0	m	J1939Cable, alternatorCable		
+1	Cable, 1 wires	0	m	camshaftSensorCableEarlyModels, coolantTemperatureSensorCable, intakeAirTemperatureWire, manifoldAirPressureSensorWire, oilPressureSignalWire, sensor5Volts		
+2	Cable, 1 x 16 AWG	0	m	fuelHeater+, groundWire, vp4412+		
+3	Cable, 1 x 20 AWG	0	m	acClutch+, sensorGroundWire, waterInFuelSensorCable		
+4	Cable, 10 x 20 AWG	0	m	ecuTo14pinSignalWire		
+5	Cable, 2 x 20 AWG	0	m	acPressureSwitchCable, liftPumpPowerCable		
+6	Cable, 3 wires	0	m	J1939Cable, alternatorCable, camshaftSensorCable		
 7	Cable, 3 x 16 AWG	0	m	ecuTo11pinPowerWire		
-8	Cable, 6 x 20 AWG	0	m	apsWire		
-9	Cable, 8 x 20 AWG	0	m	ecuTo14pinSignalWire		
-10	Connector, ???, ???, 11 pins	1		oem11pinConnector		
-11	Connector, ???, ???, 14 pins	1		oem14pinConnector		
-12	Connector, ???, ???, 2 pins	3		acClutch2pin, acPressureSwitch2pin, fuelHeater2pin		
-13	Connector, AMP, 2.5 CONTACT 9POS SOCKET HOUSING ASSY, 9 pins	1		vp44	AMP	1123006-2
-14	Connector, Male Plug, 6 pins	1		acceleratorPositionSensor	Deutsch	DT06-6S
-15	Connector, Male Plug, key 4, 50 pins	1		ecu	Deutsch	DRC26-50S04
-16	Connector, Metripack Male Plug, 2 pins	1		coolantTemperatureSensor	Delphi	12162193
-17	Connector, Metripack Male Plug, 3 pins	2		camshaftSensor, oilPressureSensor	Delphi	12162280
-18	Connector, Weather Pack Male Plug, 3 pins	1		J1939Connector	Aptiv	12020827
-19	Connector, male plug, 2 pins	2		liftPump, waterInFuelSensor	???	???
-20	Connector, male plug, 3 pins	1		alternatorPlug	???	????
-21	Connector, ring terminal, 1 pins	2		alternatorGroundRingTerminal, engineGroundRingTerminal		
+8	Cable, 4 x 20 AWG	0	m	ecuTo11pinSignalCable		
+9	Cable, 5 x 20 AWG	0	m	apsWire		
+10	Cable, 6 wires	0	m	vp44SignalCable		
+11	Connector, ???, ???, 11 pins	1		oem11pinConnector		
+12	Connector, ???, ???, 14 pins	1		oem14pinConnector		
+13	Connector, ???, ???, 2 pins	3		acClutch2pin, acPressureSwitch2pin, fuelHeater2pin		
+14	Connector, AMP, 2.5 CONTACT 9POS SOCKET HOUSING ASSY, 9 pins	1		vp44	AMP	1123006-2
+15	Connector, Male Plug, 2 pins	1		intakeAirTemperature		
+16	Connector, Male Plug, 2 pins	1		liftPump	Deutsch	DT06-2S
+17	Connector, Male Plug, 3 pins	1		manifoldAirPressureSensor		
+18	Connector, Male Plug, 6 pins	1		acceleratorPositionSensor	Deutsch	DT06-6S
+19	Connector, Male Plug, key 4, 50 pins	1		ecu	Deutsch	DRC26-50S04
+20	Connector, Metripack Male Plug, 2 pins	1		coolantTemperatureSensor	Delphi	12162193
+21	Connector, Metripack Male Plug, 3 pins	3		camshaftSensor, camshaftSensorEarlyModels, oilPressureSensor	Delphi	12162280
+22	Connector, Weather Pack Male Plug, 3 pins	1		J1939Connector	Aptiv	12020827
+23	Connector, male plug, 2 pins	1		waterInFuelSensor	???	???
+24	Connector, male plug, 3 pins	1		alternatorPlug	???	????
+25	Connector, ring terminal, 1 pins	2		alternatorGroundRingTerminal, engineGroundRingTerminal		
