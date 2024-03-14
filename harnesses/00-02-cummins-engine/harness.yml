@@ -48,6 +48,18 @@ connectors:
       src: ringTerminal/61DLI9gydlL.jpg
       width: 50
       height: 50
+  alternatorGroundRingTerminal:
+    type: ring terminal
+    pincount: 1
+    image:
+      src: ringTerminal/61DLI9gydlL.jpg
+      width: 50
+      height: 50
+  alternatorPlug:
+    type: male plug
+    mpn: ????
+    manufacturer: ???
+    pincount: 3
   J1939Connector:
     type: Weather Pack Male Plug
     mpn: 12020827
@@ -68,6 +80,8 @@ connectors:
     mpn: 12162280
     manufacturer: Delphi
     pinlabels: [A, B, C]
+    image:
+      src: connectors/12162280.jpeg
   liftPump:
     type: male plug
     mpn: ???
@@ -78,6 +92,13 @@ connectors:
     mpn: ???
     manufacturer: ???
     pinlabels: [A, B]
+  oilPressureSensor:
+    type: Metripack Male Plug
+    mpn: 12162280
+    manufacturer: Delphi
+    pinlabels: [A, B, C]
+    image:
+      src: connectors/12162280.jpeg
   acceleratorPositionSensor:
     type: Male Plug
     manufacturer: Deutsch
@@ -142,13 +163,19 @@ cables:
   coolantTemperatureSensorCable:
     colors: [OGBK, BKBU]
   camshaftSensorCable:
-    colors: [YE, BK, VTWH]
+    colors: [VTWH]
   liftPumpPowerCable:
     colors: [RD, RD]
     gauge: 20 AWG
   waterInFuelSensorCable:
     colors: [BK, BK]
     gauge: 20 AWG
+  alternatorCable:
+    colors: [YE, RD, BK]
+  oilPressureSignalWire:
+    colors: [GYBK]
+  sensor5Volts:
+    colors: [OG]
 
 connections:
   -
@@ -240,9 +267,17 @@ connections:
     - coolantTemperatureSensorCable: [1, 2]
     - coolantTemperatureSensor: [1, 2]
   -
-    - ecu: [10, 11, 9]
-    - camshaftSensorCable: [1, 2, 3]
-    - camshaftSensor: [1, 2, 3]
+    - ecu: [9]
+    - sensor5Volts: [1]
+    - camshaftSensor: [1]
+  -
+    - ecu: [9]
+    - groundWire: [1]
+    - camshaftSensor: [1]
+  -
+    - ecu: [9]
+    - camshaftSensorCable: [1]
+    - camshaftSensor: [3]
   -
     - ecu: [15, 35]
     - liftPumpPowerCable: [1, 2]
@@ -255,3 +290,24 @@ connections:
     - ecu: [11, 21]
     - waterInFuelSensorCable: [1, 2]
     - waterInFuelSensor: [1, 2]
+  -
+    - oem14pinConnector: [1, 3]
+    - alternatorCable: [1, 2]
+    - alternatorPlug: [1, 2]
+  -
+    - alternatorGroundRingTerminal: [1]
+    - alternatorCable: [3]
+    - alternatorPlug: [3]
+  -
+    - ecu: [6]
+    - oilPressureSignalWire: [1]
+    - oilPressureSensor: [1]
+  -
+    - ecu: [11]
+    - groundWire: [1]
+    - oilPressureSensor: [2]
+  -
+    - ecu: [6]
+    - sensor5Volts: [1]
+    - oilPressureSensor: [3]
+

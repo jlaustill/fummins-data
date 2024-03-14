@@ -604,6 +604,70 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
+	alternatorGroundRingTerminal [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">alternatorGroundRingTerminal</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">ring terminal</td>
+   <td balign="left">1-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td port="p1r">1</td>
+   </tr>
+  </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">
+    <table border="0" cellspacing="0" cellborder="0"><tr>
+     <td width="50" height="50" fixedsize="true"><img scale="both" src="ringTerminal/61DLI9gydlL.jpg"/></td>
+    </tr></table>
+   </td>
+  </tr></table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	alternatorPlug [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">alternatorPlug</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">???: ????</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">male plug</td>
+   <td balign="left">3-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td port="p1l">1</td>
+   </tr>
+   <tr>
+    <td port="p2l">2</td>
+   </tr>
+   <tr>
+    <td port="p3l">3</td>
+   </tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
 	J1939Connector [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -720,6 +784,11 @@ graph {
    </tr>
   </table>
  </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left"><img scale="false" src="connectors/12162280.jpeg"/></td>
+  </tr></table>
+ </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	liftPump [label=<
@@ -783,6 +852,47 @@ graph {
     <td>B</td>
    </tr>
   </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	oilPressureSensor [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">oilPressureSensor</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Delphi: 12162280</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Metripack Male Plug</td>
+   <td balign="left">3-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td port="p1l">1</td>
+    <td>A</td>
+   </tr>
+   <tr>
+    <td port="p2l">2</td>
+    <td>B</td>
+   </tr>
+   <tr>
+    <td port="p3l">3</td>
+    <td>C</td>
+   </tr>
+  </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left"><img scale="false" src="connectors/12162280.jpeg"/></td>
+  </tr></table>
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
@@ -1161,8 +1271,14 @@ graph {
 	oem14pinConnector:p12r:e -- groundWire:w1:w
 	groundWire:w1:e -- engineGroundRingTerminal:p1l:w
 	edge [color="#000000:#000000:#000000:#000000:#000000"]
+	ecu:p9r:e -- groundWire:w1:w
+	groundWire:w1:e -- camshaftSensor:p1l:w
+	edge [color="#000000:#000000:#000000:#000000:#000000"]
 	oem14pinConnector:p12r:e -- groundWire:w1:w
 	groundWire:w1:e -- liftPump:p2l:w
+	edge [color="#000000:#000000:#000000:#000000:#000000"]
+	ecu:p11r:e -- groundWire:w1:w
+	groundWire:w1:e -- oilPressureSensor:p2l:w
 	groundWire [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -1998,15 +2114,9 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	edge [color="#000000:#ffff00:#ffff00:#ffff00:#000000"]
-	ecu:p10r:e -- camshaftSensorCable:w1:w
-	camshaftSensorCable:w1:e -- camshaftSensor:p1l:w
-	edge [color="#000000:#000000:#000000:#000000:#000000"]
-	ecu:p11r:e -- camshaftSensorCable:w2:w
-	camshaftSensorCable:w2:e -- camshaftSensor:p2l:w
 	edge [color="#000000:#8000ff:#ffffff:#8000ff:#000000"]
-	ecu:p9r:e -- camshaftSensorCable:w3:w
-	camshaftSensorCable:w3:e -- camshaftSensor:p3l:w
+	ecu:p9r:e -- camshaftSensorCable:w1:w
+	camshaftSensorCable:w1:e -- camshaftSensor:p3l:w
 	camshaftSensorCable [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -2016,57 +2126,21 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">3x</td>
+   <td balign="left">1x</td>
   </tr></table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>ecu:10:sensor +5 volts</td>
-    <td>
-     1:YE
-    </td>
-    <td>camshaftSensor:1:A</td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td>ecu:11:sensor ground</td>
-    <td>
-     2:BK
-    </td>
-    <td>camshaftSensor:2:B</td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
     <td>ecu:9:CAM sensor signal</td>
     <td>
-     3:VTWH
+     1:VTWH
     </td>
     <td>camshaftSensor:3:C</td>
    </tr>
    <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="10">
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="10">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#8000ff" border="0"></td></tr>
@@ -2198,6 +2272,174 @@ graph {
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#ffff00:#ffff00:#ffff00:#000000"]
+	oem14pinConnector:p1r:e -- alternatorCable:w1:w
+	alternatorCable:w1:e -- alternatorPlug:p1l:w
+	edge [color="#000000:#ff0000:#ff0000:#ff0000:#000000"]
+	oem14pinConnector:p3r:e -- alternatorCable:w2:w
+	alternatorCable:w2:e -- alternatorPlug:p2l:w
+	edge [color="#000000:#000000:#000000:#000000:#000000"]
+	alternatorGroundRingTerminal:p1r:e -- alternatorCable:w3:w
+	alternatorCable:w3:e -- alternatorPlug:p3l:w
+	alternatorCable [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">alternatorCable</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">3x</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>oem14pinConnector:1:generator field driver</td>
+    <td>
+     1:YE
+    </td>
+    <td>alternatorPlug:1</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>oem14pinConnector:3:system voltage</td>
+    <td>
+     2:RD
+    </td>
+    <td>alternatorPlug:2</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>alternatorGroundRingTerminal:1</td>
+    <td>
+     3:BK
+    </td>
+    <td>alternatorPlug:3</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#999999:#000000:#999999:#000000"]
+	ecu:p6r:e -- oilPressureSignalWire:w1:w
+	oilPressureSignalWire:w1:e -- oilPressureSensor:p1l:w
+	oilPressureSignalWire [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">oilPressureSignalWire</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1x</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>ecu:6:oil pressure sensor signal</td>
+    <td>
+     1:GYBK
+    </td>
+    <td>oilPressureSensor:1:A</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#ff8000:#ff8000:#ff8000:#000000"]
+	ecu:p9r:e -- sensor5Volts:w1:w
+	sensor5Volts:w1:e -- camshaftSensor:p1l:w
+	edge [color="#000000:#ff8000:#ff8000:#ff8000:#000000"]
+	ecu:p6r:e -- sensor5Volts:w1:w
+	sensor5Volts:w1:e -- oilPressureSensor:p3l:w
+	sensor5Volts [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">sensor5Volts</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1x</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>ecu:9:CAM sensor signal</td>
+    <td>
+     1:OG
+    </td>
+    <td>camshaftSensor:1:A</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff8000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff8000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff8000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
