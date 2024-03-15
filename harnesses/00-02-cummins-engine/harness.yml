@@ -131,7 +131,10 @@ connectors:
 cables:
   vp4412+:
     colors: [RDGN]
-    gauge: 16 AWG
+    gauge: 14 AWG
+  vp4412-:
+    colors: [YEBK]
+    gauge: 14 AWG
   groundWire:
     colors: [BKWH]
     gauge: 16 AWG
@@ -197,14 +200,10 @@ connections:
     - vp44: [7]
   -
     - oem14pinConnector: [12]
-    - groundWire: [1]
+    - vp4412-: [1]
     - vp44: [6]
   -
-    - oem14pinConnector: [12]
-    - groundWire: [1]
-    - oem11pinConnector: [10]
-  -
-    - oem14pinConnector: [ 12 ]
+    - oem11pinConnector: [ 10 ]
     - groundWire: [1]
     - fuelHeater2pin: [2]
   -
@@ -212,11 +211,11 @@ connections:
     - fuelHeater+: [1]
     - fuelHeater2pin: [1]
   -
-    - oem14pinConnector: [ 12 ]
+    - oem11pinConnector: [ 10 ]
     - groundWire: [1]
     - acClutch2pin: [2]
   -
-    - oem14pinConnector: [ 12, 12 ]
+    - oem11pinConnector: [ 10, 10 ]
     - groundWire: [1,1]
     - ecu: [30, 49]
   -
@@ -232,7 +231,7 @@ connections:
     - acPressureSwitchCable: [2]
     - acPressureSwitch2pin: [2]
   -
-    - oem14pinConnector: [12]
+    - oem11pinConnector: [10]
     - groundWire: [1]
     - engineGroundRingTerminal: [1]
   -
@@ -284,7 +283,7 @@ connections:
     - liftPumpPowerCable: [1, 2]
     - liftPump: [1, 1]
   -
-    - oem14pinConnector: [12]
+    - oem11pinConnector: [10]
     - groundWire: [1]
     - liftPump: [2]
   -

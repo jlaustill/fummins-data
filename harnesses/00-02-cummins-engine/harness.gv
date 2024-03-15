@@ -377,57 +377,46 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
    <tr>
-    <td port="p1l">1</td>
     <td>Switched +12 volts</td>
     <td port="p1r">1</td>
    </tr>
    <tr>
-    <td port="p2l">2</td>
     <td>PTO status input</td>
     <td port="p2r">2</td>
    </tr>
    <tr>
-    <td port="p3l">3</td>
     <td>Constant 12 volts</td>
     <td port="p3r">3</td>
    </tr>
    <tr>
-    <td port="p4l">4</td>
     <td>A/C clutch</td>
     <td port="p4r">4</td>
    </tr>
    <tr>
-    <td port="p5l">5</td>
     <td>A/C high pressure switch</td>
     <td port="p5r">5</td>
    </tr>
    <tr>
-    <td port="p6l">6</td>
     <td>transmission shift modulation signal</td>
     <td port="p6r">6</td>
    </tr>
    <tr>
-    <td port="p7l">7</td>
     <td>VP44 +12 volts</td>
     <td port="p7r">7</td>
    </tr>
    <tr>
-    <td port="p8l">8</td>
     <td>VP44 power shutoff signal</td>
     <td port="p8r">8</td>
    </tr>
    <tr>
-    <td port="p9l">9</td>
     <td>fuel heater</td>
     <td port="p9r">9</td>
    </tr>
    <tr>
-    <td port="p10l">10</td>
     <td>ground</td>
     <td port="p10r">10</td>
    </tr>
    <tr>
-    <td port="p11l">11</td>
     <td>eleven</td>
     <td port="p11r">11</td>
    </tr>
@@ -1105,7 +1094,7 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">1x</td>
-   <td balign="left">16 AWG</td>
+   <td balign="left">14 AWG</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -1134,29 +1123,65 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#ffff00:#000000:#ffff00:#000000"]
+	oem14pinConnector:p12r:e -- "vp4412-":w1:w
+	"vp4412-":w1:e -- vp44:p6l:w
+	"vp4412-" [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">vp4412-</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1x</td>
+   <td balign="left">14 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>oem14pinConnector:12:VP44 ground</td>
+    <td>
+     1:YEBK
+    </td>
+    <td>vp44:6:12-</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#000000:#ffffff:#000000:#000000"]
-	oem14pinConnector:p12r:e -- groundWire:w1:w
-	groundWire:w1:e -- vp44:p6l:w
-	edge [color="#000000:#000000:#ffffff:#000000:#000000"]
-	oem14pinConnector:p12r:e -- groundWire:w1:w
-	groundWire:w1:e -- oem11pinConnector:p10l:w
-	edge [color="#000000:#000000:#ffffff:#000000:#000000"]
-	oem14pinConnector:p12r:e -- groundWire:w1:w
+	oem11pinConnector:p10r:e -- groundWire:w1:w
 	groundWire:w1:e -- fuelHeater2pin:p2l:w
 	edge [color="#000000:#000000:#ffffff:#000000:#000000"]
-	oem14pinConnector:p12r:e -- groundWire:w1:w
+	oem11pinConnector:p10r:e -- groundWire:w1:w
 	groundWire:w1:e -- acClutch2pin:p2l:w
 	edge [color="#000000:#000000:#ffffff:#000000:#000000"]
-	oem14pinConnector:p12r:e -- groundWire:w1:w
+	oem11pinConnector:p10r:e -- groundWire:w1:w
 	groundWire:w1:e -- ecu:p30l:w
 	edge [color="#000000:#000000:#ffffff:#000000:#000000"]
-	oem14pinConnector:p12r:e -- groundWire:w1:w
+	oem11pinConnector:p10r:e -- groundWire:w1:w
 	groundWire:w1:e -- ecu:p49l:w
 	edge [color="#000000:#000000:#ffffff:#000000:#000000"]
-	oem14pinConnector:p12r:e -- groundWire:w1:w
+	oem11pinConnector:p10r:e -- groundWire:w1:w
 	groundWire:w1:e -- engineGroundRingTerminal:p1l:w
 	edge [color="#000000:#000000:#ffffff:#000000:#000000"]
-	oem14pinConnector:p12r:e -- groundWire:w1:w
+	oem11pinConnector:p10r:e -- groundWire:w1:w
 	groundWire:w1:e -- liftPump:p2l:w
 	groundWire [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -1175,11 +1200,11 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>oem14pinConnector:12:VP44 ground</td>
+    <td>oem11pinConnector:10:ground</td>
     <td>
      1:BKWH
     </td>
-    <td>vp44:6:12-</td>
+    <td>fuelHeater2pin:2</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="10">
