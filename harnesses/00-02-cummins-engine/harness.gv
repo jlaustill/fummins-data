@@ -112,7 +112,7 @@ graph {
    </tr>
    <tr>
     <td port="p18l">18</td>
-    <td>engine position reference signal</td>
+    <td>fault/engine position reference signal</td>
     <td port="p18r">18</td>
    </tr>
    <tr>
@@ -162,7 +162,7 @@ graph {
    </tr>
    <tr>
     <td port="p28l">28</td>
-    <td>transmission shift modulation signal</td>
+    <td>APPS send to PCM</td>
     <td port="p28r">28</td>
    </tr>
    <tr>
@@ -187,12 +187,12 @@ graph {
    </tr>
    <tr>
     <td port="p33l">33</td>
-    <td>VP44 fuel shutoff</td>
+    <td>Knock Sensor Return/VP44 fuel shutoff</td>
     <td port="p33r">33</td>
    </tr>
    <tr>
     <td port="p34l">34</td>
-    <td>low idle select</td>
+    <td>CMP/low idle select</td>
     <td port="p34r">34</td>
    </tr>
    <tr>
@@ -212,22 +212,22 @@ graph {
    </tr>
    <tr>
     <td port="p38l">38</td>
-    <td>ISO 9141 TX</td>
+    <td>SCI/ISO 9141 TX</td>
     <td port="p38r">38</td>
    </tr>
    <tr>
     <td port="p39l">39</td>
-    <td>ISO 9141 RX</td>
+    <td>SCI/ISO 9141 RX</td>
     <td port="p39r">39</td>
    </tr>
    <tr>
     <td port="p40l">40</td>
-    <td>Vehicle DataLink -</td>
+    <td>CCD/Vehicle DataLink -</td>
     <td port="p40r">40</td>
    </tr>
    <tr>
     <td port="p41l">41</td>
-    <td>Vehicle DataLink +</td>
+    <td>CCD/Vehicle DataLink +</td>
     <td port="p41r">41</td>
    </tr>
    <tr>
@@ -422,6 +422,11 @@ graph {
    </tr>
   </table>
  </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left"><img scale="false" src="connectors/oem11pin.png"/></td>
+  </tr></table>
+ </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	oem14pinConnector [label=<
@@ -497,6 +502,11 @@ graph {
     <td port="p14r">14</td>
    </tr>
   </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left"><img scale="false" src="connectors/oem14pin.png"/></td>
+  </tr></table>
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
@@ -1660,7 +1670,7 @@ graph {
     <td>
      4:VTBK
     </td>
-    <td>ecu:41:Vehicle DataLink +</td>
+    <td>ecu:41:CCD/Vehicle DataLink +</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w4" height="10">
@@ -1678,7 +1688,7 @@ graph {
     <td>
      5:WHBK
     </td>
-    <td>ecu:40:Vehicle DataLink -</td>
+    <td>ecu:40:CCD/Vehicle DataLink -</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w5" height="10">
@@ -1696,7 +1706,7 @@ graph {
     <td>
      6:GN
     </td>
-    <td>ecu:39:ISO 9141 RX</td>
+    <td>ecu:39:SCI/ISO 9141 RX</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w6" height="10">
@@ -1714,7 +1724,7 @@ graph {
     <td>
      7:PKBU
     </td>
-    <td>ecu:38:ISO 9141 TX</td>
+    <td>ecu:38:SCI/ISO 9141 TX</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w7" height="10">
@@ -1903,7 +1913,7 @@ graph {
     <td>
      1:OGBU
     </td>
-    <td>ecu:28:transmission shift modulation signal</td>
+    <td>ecu:28:APPS send to PCM</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="10">
@@ -2504,7 +2514,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>ecu:34:low idle select</td>
+    <td>ecu:34:CMP/low idle select</td>
     <td>
      4:VTPK
     </td>
@@ -2522,7 +2532,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>ecu:33:VP44 fuel shutoff</td>
+    <td>ecu:33:Knock Sensor Return/VP44 fuel shutoff</td>
     <td>
      5:GNVT
     </td>
@@ -2540,7 +2550,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>ecu:18:engine position reference signal</td>
+    <td>ecu:18:fault/engine position reference signal</td>
     <td>
      6:GN
     </td>

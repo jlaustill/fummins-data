@@ -7,10 +7,10 @@ connectors:
     image:
       src: connectors/drc26-50s04_SPL.webp
     pinlabels: [APPS idle signal, J1939 +, crank sensor +5 volts, crank sensor ground, Switched +12 volts, oil pressure sensor signal, IAT signal, MAP signal, CAM sensor signal,
-                sensor +5 volts, sensor ground, J1939-, VP44 datalink+, coolant sensor signal, lift pump 12+, APPS off-idle signal, crank sensor signal, engine position reference signal, NC,
-                NC(used by turbo controller), water in fuel sensor signal, Speed Control Switch, VP44 datalink-, Brake Switch Sensor, APPS position signal, PTO status input, NC, transmission shift modulation signal, intake air heater 1 control,
-                ground, APPS +5 volts, APPS ground, VP44 fuel shutoff, low idle select, lift pump +12 volts, VP44 power shutoff, WTS light, ISO 9141 TX, ISO 9141 RX,
-                Vehicle DataLink -, Vehicle DataLink +, J1939 shield, VSS Signal, VP44 datalink shield, tachometer signal, NC, intake air heater 2 control, Constant 12 volts, ground,
+                sensor +5 volts, sensor ground, J1939-, VP44 datalink+, coolant sensor signal, lift pump 12+, APPS off-idle signal, crank sensor signal, fault/engine position reference signal, NC,
+                NC(used by turbo controller), water in fuel sensor signal, Speed Control Switch, VP44 datalink-, Brake Switch Sensor, APPS position signal, PTO status input, NC, APPS send to PCM, intake air heater 1 control,
+                ground, APPS +5 volts, APPS ground, Knock Sensor Return/VP44 fuel shutoff, CMP/low idle select, lift pump +12 volts, VP44 power shutoff, WTS light, SCI/ISO 9141 TX, SCI/ISO 9141 RX,
+                CCD/Vehicle DataLink -, CCD/Vehicle DataLink +, J1939 shield, VSS Signal, VP44 datalink shield, tachometer signal, NC, intake air heater 2 control, Constant 12 volts, ground,
                 Constant 12 volts]
     notes: not sure what pins 22, 24, and 43 do on the 01-02...
   vp44:
@@ -26,10 +26,14 @@ connectors:
     type: ???
     subtype: ???
     pinlabels: [Switched +12 volts, PTO status input, Constant 12 volts, A/C clutch, A/C high pressure switch, transmission shift modulation signal, VP44 +12 volts, VP44 power shutoff signal, fuel heater, ground, VSS Signal]
+    image:
+      src: connectors/oem11pin.png
   oem14pinConnector:
     type: ???
     subtype: ???
     pinlabels: [generator field driver, speed control switch, system voltage, ISO 9141 RX, ISO 9141 TX, Vehicle DataLink +, Vehicle DataLink -, WTS light, A/C high pressure switch ground, tachometer signal, Brake Switch Sensor, VP44 ground, intake air heater 1 control, intake air heater 2 control]
+    image:
+      src: connectors/oem14pin.png
   fuelHeater2pin:
     type: ???
     subtype: ???

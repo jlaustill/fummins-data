@@ -61,10 +61,15 @@ graph {
     <td port="p10r">10</td>
    </tr>
    <tr>
-    <td>eleven</td>
+    <td>VSS Signal</td>
     <td port="p11r">11</td>
    </tr>
   </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left"><img scale="false" src="connectors/oem11pin.png"/></td>
+  </tr></table>
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
@@ -89,7 +94,7 @@ graph {
     <td port="p1r">1</td>
    </tr>
    <tr>
-    <td>two</td>
+    <td>speed control switch</td>
     <td port="p2r">2</td>
    </tr>
    <tr>
@@ -125,7 +130,7 @@ graph {
     <td port="p10r">10</td>
    </tr>
    <tr>
-    <td>eleven</td>
+    <td>Brake Switch Sensor</td>
     <td port="p11r">11</td>
    </tr>
    <tr>
@@ -141,6 +146,11 @@ graph {
     <td port="p14r">14</td>
    </tr>
   </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left"><img scale="false" src="connectors/oem14pin.png"/></td>
+  </tr></table>
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
