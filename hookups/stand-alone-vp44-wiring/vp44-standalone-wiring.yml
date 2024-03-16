@@ -1,0 +1,38 @@
+connectors:
+  oem11pinConnector:
+    type: ???
+    subtype: ???
+    pinlabels: [Switched +12 volts, PTO status input, Constant 12 volts, A/C clutch, A/C high pressure switch, transmission shift modulation signal, VP44 +12 volts, VP44 power shutoff signal, fuel heater, ground, eleven]
+  oem14pinConnector:
+    type: ???
+    subtype: ???
+    pinlabels: [generator field driver, two, system voltage, ISO 9141 RX, ISO 9141 TX, Vehicle DataLink +, Vehicle DataLink -, WTS light, A/C high pressure switch ground, tachometer signal, eleven, VP44 ground, intake air heater 1 control, intake air heater 2 control]
+  truckConnector:
+    pinlabels: [hot in run and start 10 amp, constant 12 volts 20 amp, grid heater 1, grid heater 2, ground, wait to start light]
+    notes: wait to start light grounds the wire
+  relayConnector:
+    pinlabels: ["30", "87", "85", "86"]
+
+cables:
+  relayCable:
+    colors: [BK, RDWH, BNWH, RDGN]
+  truckWiringCable:
+    colors: [GNBK, RDWH, OGBK, BKBG, YEBK, OGBK]
+
+connections:
+  -
+    - oem11pinConnector: [3,8,7]
+    - relayCable: [2,3,4]
+    - relayConnector: [1,4,2]
+  -
+    - oem11pinConnector: [1, 3]
+    - truckWiringCable: [1, 2]
+    - truckConnector: [1,2]
+  -
+    - truckConnector: [5]
+    - relayCable: [1]
+    - relayConnector: [3]
+  -
+    - oem14pinConnector: [8, 12, 13, 14]
+    - truckWiringCable: [3, 4, 5, 6]
+    - truckConnector: [6, 5, 3, 4]

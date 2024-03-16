@@ -19,7 +19,7 @@ Id	Description	Qty	Unit	Designators	Manufacturer	MPN
 18	Connector, Male Plug, 3 pins	1		manifoldAirPressureSensor		
 19	Connector, Male Plug, 6 pins	1		acceleratorPositionSensor	Deutsch	DT06-6S
 20	Connector, Male Plug, key 4, 50 pins	1		ecu	Deutsch	DRC26-50S04
-21	Connector, Metripack Male Plug, 2 pins	1		coolantTemperatureSensor	Delphi	12162193
+21	Connector, Metri-Pack Male Plug, 2 pins	1		coolantTemperatureSensor	Aptiv	12162193
 22	Connector, Metripack Male Plug, 3 pins	3		camshaftSensor, camshaftSensorEarlyModels, oilPressureSensor	Delphi	12162280
 23	Connector, Weather Pack Male Plug, 3 pins	1		J1939Connector	Aptiv	12020827
 24	Connector, male plug, 2 pins	1		waterInFuelSensor	???	???

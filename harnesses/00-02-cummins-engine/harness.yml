@@ -70,11 +70,11 @@ connectors:
       src: connectors/12020827.jpeg
       width: 50
   coolantTemperatureSensor:
-    type: Metripack Male Plug
+    type: Metri-Pack Male Plug
     mpn: 12162193
-    manufacturer: Delphi
+    manufacturer: Aptiv
     image:
-      src: connectors/150.2_2-female.webp
+      src: connectors/12162193.webp
     pinlabels: [A, B]
   camshaftSensorEarlyModels:
     type: Metripack Male Plug
