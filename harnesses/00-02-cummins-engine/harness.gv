@@ -980,7 +980,12 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Male Plug</td>
+   <td balign="left">Aptiv/Delphi: 12162198</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Metri-Pack Male Plug</td>
    <td balign="left">2-pin</td>
   </tr></table>
  </td></tr>
@@ -996,6 +1001,11 @@ graph {
    </tr>
   </table>
  </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left"><img scale="false" src="connectors/12162198.jpeg"/></td>
+  </tr></table>
+ </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	manifoldAirPressureSensor [label=<
@@ -1007,7 +1017,12 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Male Plug</td>
+   <td balign="left">Aptiv/Delphi: 12162182</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Metri-Pack 150.2 Plug</td>
    <td balign="left">3-pin</td>
   </tr></table>
  </td></tr>
@@ -1026,6 +1041,11 @@ graph {
     <td>signal</td>
    </tr>
   </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left"><img scale="false" src="connectors/12162182.jpeg"/></td>
+  </tr></table>
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]

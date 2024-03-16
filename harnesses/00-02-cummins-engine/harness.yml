@@ -117,10 +117,18 @@ connectors:
     image:
       src: connectors/12162280.jpeg
   intakeAirTemperature:
-    type: Male Plug
+    type: Metri-Pack Male Plug
+    mpn: 12162198
+    manufacturer: Aptiv/Delphi
+    image:
+      src: connectors/12162198.jpeg
     pinlabels: [ground, signal]
   manifoldAirPressureSensor:
-    type: Male Plug
+    type: Metri-Pack 150.2 Plug
+    mpn: 12162182
+    manufacturer: Aptiv/Delphi
+    image:
+      src: connectors/12162182.jpeg
     pinlabels: [5volts, ground, signal]
   acceleratorPositionSensor:
     type: Male Plug
