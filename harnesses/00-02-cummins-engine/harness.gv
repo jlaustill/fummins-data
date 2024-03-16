@@ -132,7 +132,7 @@ graph {
    </tr>
    <tr>
     <td port="p22l">22</td>
-    <td>NC</td>
+    <td>Speed Control Switch</td>
     <td port="p22r">22</td>
    </tr>
    <tr>
@@ -142,7 +142,7 @@ graph {
    </tr>
    <tr>
     <td port="p24l">24</td>
-    <td>NC</td>
+    <td>Brake Switch Sensor</td>
     <td port="p24r">24</td>
    </tr>
    <tr>
@@ -237,7 +237,7 @@ graph {
    </tr>
    <tr>
     <td port="p43l">43</td>
-    <td>NC</td>
+    <td>VSS Signal</td>
     <td port="p43r">43</td>
    </tr>
    <tr>
@@ -417,7 +417,7 @@ graph {
     <td port="p10r">10</td>
    </tr>
    <tr>
-    <td>eleven</td>
+    <td>VSS Signal</td>
     <td port="p11r">11</td>
    </tr>
   </table>
@@ -445,7 +445,7 @@ graph {
     <td port="p1r">1</td>
    </tr>
    <tr>
-    <td>two</td>
+    <td>speed control switch</td>
     <td port="p2r">2</td>
    </tr>
    <tr>
@@ -481,7 +481,7 @@ graph {
     <td port="p10r">10</td>
    </tr>
    <tr>
-    <td>eleven</td>
+    <td>Brake Switch Sensor</td>
     <td port="p11r">11</td>
    </tr>
    <tr>
@@ -1746,11 +1746,11 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>oem14pinConnector:2:two</td>
+    <td>oem14pinConnector:2:speed control switch</td>
     <td>
      9:RDGN
     </td>
-    <td>ecu:22:NC</td>
+    <td>ecu:22:Speed Control Switch</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w9" height="10">
@@ -1764,11 +1764,11 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>oem14pinConnector:11:eleven</td>
+    <td>oem14pinConnector:11:Brake Switch Sensor</td>
     <td>
      10:YERD
     </td>
-    <td>ecu:24:NC</td>
+    <td>ecu:24:Brake Switch Sensor</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w10" height="10">
@@ -1953,11 +1953,11 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>oem11pinConnector:11:eleven</td>
+    <td>oem11pinConnector:11:VSS Signal</td>
     <td>
      4:WHPK
     </td>
-    <td>ecu:43:NC</td>
+    <td>ecu:43:VSS Signal</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w4" height="10">
