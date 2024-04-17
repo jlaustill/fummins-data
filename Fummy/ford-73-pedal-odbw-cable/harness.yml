@@ -1,0 +1,29 @@
+connectors:
+  pedal:
+    type: Female Plug
+    mpn: WPT-1326
+    manufacturer: Ford
+    image:
+      src: connectors/wrt-1326.jpg
+    pinlabels: [one, two, three, four, five, Idle Switch, Idle Ground, APPS Signal, APPS Ground, APPS Power]
+    notes: if you know a part number for this that isn't ford please let me know!
+  adapterPlug:
+    type: Male Plug
+    manufacturer: Deutsch
+    mpn: DT06-4S
+    image:
+      src: connectors/DT06-4S.jpeg
+    notes: https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/4849/DS_1208_DT_Series.pdf
+    pinlabels: [3.3 Volts, Ground, Idle Switch, APPS Signal]
+
+cables:
+  patchCable:
+    colors: [RD, BK, WH, GY]
+    gauge: 20 AWG
+
+connections:
+  -
+    - pedal: [6, 7, 8, 9, 10]
+    - patchCable: [3, 2, 4, 2, 1]
+    - adapterPlug: [3, 2, 4, 2, 1]
+
