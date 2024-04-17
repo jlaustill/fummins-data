@@ -1,0 +1,15 @@
+connectors:
+  pedal:
+    pinlabels: [one, two, three, four, five, idleSignal, idleGround, wiper, ground, 3.3volts]
+  outputConnector:
+    pinlabels: [signal, idle, power, ground]
+
+cables:
+  outputCable:
+    colors: [GN, GN, GN, GN]
+
+connections:
+  -
+    - pedal: [6, 7, 8, 9, 10]
+    - outputCable: [1, 2, 3, 2, 4]
+    - outputConnector: [2, 4, 1, 4, 3]

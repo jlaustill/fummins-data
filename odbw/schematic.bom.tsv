@@ -1,0 +1,7 @@
+Id	Description	Qty	Unit	Designators
+1	Cable, 1 wires	0	m	3p3voltsWire, appsIdleWire, appsSensorWire, groundWire, relaySignalWire
+2	Cable, 2 x 24 AWG	0	m	I2CCable
+3	Cable, 3 wires	0	m	idleCable, outputCable
+4	Connector, 5 pins	1		pedal
+5	Connector, 6 pins	3		MCP4725, outputConnector, relay
+6	Connector, 7 pins	1		teensy40

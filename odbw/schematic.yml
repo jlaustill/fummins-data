@@ -1,0 +1,81 @@
+connectors:
+  teensy40:
+    pinlabels: [3.3volts, "19", "18", "14", "4", "5", GND]
+    notes: Teensy 4.0
+  MCP4725:
+    pinlabels: [VDD, GND, SCL, SDA, A0, VOUT]
+  pedal:
+    pinlabels: [idleSignal, idleGround, wiper, ground, 3.3volts]
+  relay:
+    pinlabels: [VCC, IN, GND, NC, COM, "NO"]
+  outputConnector:
+    pinlabels: ["APPS Power", "APPS Ground", "APPS Signal", "Ground", "On Idle", "Off Idle"]
+
+cables:
+  I2CCable:
+    colors: [YE, GN]
+    gauge: 24 AWG
+  outputCable:
+    colors: [RD, BK, YE]
+  appsSensorWire:
+    colors: [BU]
+  appsIdleWire:
+    colors: [GN]
+  relaySignalWire:
+    colors: [VT]
+  idleCable:
+    colors: [BK, VT, GN]
+  3p3voltsWire:
+    colors: [RD]
+  groundWire:
+    colors: [BK]
+
+connections:
+  -
+    - teensy40: [2, 3]
+    - I2CCable: [1, 2]
+    - MCP4725: [3, 4]
+  -
+    - teensy40: [7]
+    - groundWire: [1]
+    - MCP4725: [2]
+  -
+    - teensy40: [7, 7]
+    - groundWire: [1, 1]
+    - pedal: [2, 4]
+  -
+    - teensy40: [7, 7]
+    - groundWire: [1, 1]
+    - relay: [3, 5]
+  -
+    - teensy40: [1]
+    - 3p3voltsWire: [1]
+    - MCP4725: [1]
+  -
+    - teensy40: [1]
+    - 3p3voltsWire: [1]
+    - relay: [1]
+  -
+    - teensy40: [1]
+    - 3p3voltsWire: [1]
+    - pedal: [5]
+  -
+    - MCP4725: [1, 2, 6]
+    - outputCable: [1, 2, 3]
+    - outputConnector: [1, 2, 3]
+  -
+    - teensy40: [ 4 ]
+    - appsSensorWire: [1]
+    - pedal: [3]
+  -
+    - teensy40: [ 5 ]
+    - appsIdleWire: [1]
+    - pedal: [1]
+  -
+    - teensy40: [ 6 ]
+    - relaySignalWire: [1]
+    - relay: [2]
+  -
+    - relay: [ 5, 4, 6 ]
+    - idleCable: [1, 2, 3]
+    - outputConnector: [4, 5, 6]
