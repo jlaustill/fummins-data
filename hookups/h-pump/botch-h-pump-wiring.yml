@@ -1,0 +1,40 @@
+connectors:
+  bosch2-427-010-024Connector:
+    type: ???
+    subtype: ???
+    pinlabels: [Fuel Rack Sensor Signal, Fuel Rack Activator 1, Timing Activator 1, Timing Activator 2, Fuel Rack Activator Ground, Fuel Rack Activator Power, Fuel Rack Activator 2]
+    image:
+      src: connectors/2-427-010-024.jpeg
+  fuelRackActivator:
+    type: ???
+    subtype: ???
+    pinlabels: [One, Two]
+    image:
+      src: connectors/fuel_rack_activator.jpg
+  fuelRackSensor:
+    pinlabels: [Power, Ground, Signal]
+    notes: Tricky sucker
+    image:
+      src: connectors/fuel_rack_sensor.jpg
+  timingCamActivator:
+    pinlabels: [One, Two]
+    image:
+      src: connectors/timing_cam_activator.jpg
+
+cables:
+  Cable:
+    colors: [GN, BN, BU, WH, BK, RD, BNWH]
+
+connections:
+  -
+    - bosch2-427-010-024Connector: [2, 7]
+    - Cable: [2, 7]
+    - fuelRackActivator: [1, 2]
+  -
+    - bosch2-427-010-024Connector: [1, 5, 6]
+    - Cable: [1, 5, 6]
+    - fuelRackSensor: [1,2,3]
+  -
+    - bosch2-427-010-024Connector: [3, 4]
+    - Cable: [3, 4]
+    - timingCamActivator: [1, 2]

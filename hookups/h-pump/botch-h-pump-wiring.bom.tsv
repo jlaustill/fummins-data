@@ -1,0 +1,6 @@
+Id	Description	Qty	Unit	Designators
+1	Cable, 7 wires	0	m	Cable
+2	Connector, 2 pins	1		timingCamActivator
+3	Connector, 3 pins	1		fuelRackSensor
+4	Connector, ???, ???, 2 pins	1		fuelRackActivator
+5	Connector, ???, ???, 7 pins	1		bosch2-427-010-024Connector
