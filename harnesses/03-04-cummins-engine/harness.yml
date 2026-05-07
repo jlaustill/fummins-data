@@ -1,0 +1,602 @@
+# 2004 Dodge Ram 5.9L Cummins Engine Harness (CM848D ECU)
+# All pin assignments from 2004 Dodge Ram FSM Section 8W-80
+# Terminates at firewall where engine harness meets truck harness
+#
+# A/T vs M/T: ECM is programmed for either transmission. Pin labels below use
+# M/T assignments where they differ; A/T-only signals are noted inline.
+
+connectors:
+  # ── ECM ─────────────────────────────────────────────────────────────────────
+  ecmC1:
+    type: ECM Connector C1
+    subtype: 60-WAY
+    pincount: 60
+    notes: "Sensor inputs, injectors, 5V refs, CCD bus. Mounted driver-side engine block."
+    pinlabels:
+      - NC                              # 1
+      - NC                              # 2
+      - NC                              # 3
+      - CCD BUS (+)                     # 4  D72 18WT/LB
+      - CCD BUS (-)                     # 5  D71 18WT/DB
+      - FUEL PUMP RELAY RETURN          # 6  K65 18BR/LB
+      - GEN FIELD CONTROL               # 7  K20 18BR/GY
+      - NC                              # 8
+      - NC                              # 9
+      - NC                              # 10
+      - ECT SIGNAL                      # 11 K2 18VT/OR (M/T) / 18TN/BK (A/T)
+      - FUEL PUMP DRIVER                # 12 K181 18BR/YL
+      - NC                              # 13
+      - APPS NO. 1 SIGNAL               # 14 K23 18DB/WT (M/T) / TP SIGNAL K22 18BR/WT (A/T)
+      - IAT SENSOR SIGNAL               # 15 K21 18DB/LG
+      - APPS NO. 2 SIGNAL               # 16 K29 18WT/BR (M/T only; NC for A/T)
+      - NC                              # 17
+      - NC                              # 18
+      - FUEL PUMP RELAY CONTROL         # 19 K31 18BR
+      - NC                              # 20
+      - NC                              # 21
+      - CKP SIGNAL                      # 22 K24 18BR/LB (M/T) / 18LB/BR (A/T)
+      - SENSOR GROUND                   # 23 K914 18BR/WT (M/T) / 18RD/WT (A/T)
+      - CMP SIGNAL                      # 24 K44 18DB/GY
+      - SUPPLY VOLTAGE                  # 25 K688 18BR (M/T) / K668 18LG (A/T)
+      - A/C PRESSURE SENSOR GROUND      # 26 C918 18BK/LB
+      - 5 VOLT SUPPLY                   # 27 K853 18DB/BR
+      - NC                              # 28
+      - INLET AIR TEMP/PRESSURE RETURN  # 29 K690 18BR/YL (M/T) / 18DG/YL (A/T)
+      - INJECTOR CONTROL NO. 1          # 30 K11 16BR/YL (M/T) / 16WT/DB (A/T)
+      - WATER IN FUEL SENSOR SIGNAL     # 31 G123 18VT/LG
+      - SENSOR GROUND                   # 32 K916 18BR/OR
+      - APPS NO. 1 RETURN               # 33 K167 18BR/YL (M/T) / TPS RETURN K922 18LG/OR (A/T)
+      - IDLE SWITCH                     # 34 K565 18OR (A/T only; NC for M/T)
+      - NC                              # 35
+      - INJECTOR CONTROL NO. 4          # 36 K14 16BR/TN
+      - NC                              # 37
+      - NC                              # 38
+      - NC                              # 39
+      - INJECTOR CONTROL NO. 3          # 40 K13 16BR/LB (M/T) / 16TN (A/T)
+      - NC                              # 41
+      - APPS 1 5-VOLT SUPPLY            # 42 K852 18BR/VT (M/T) / K851 18VT/PK (A/T)
+      - BOOST PRESSURE SENSOR SIGNAL    # 43 K37 18BR/OR (M/T) / 18LB (A/T)
+      - NOT IDLE SWITCH                 # 44 K556 18OR/BR (A/T only; NC for M/T)
+      - LIFT PUMP FEED                  # 45 N2 18DB/YL
+      - INJECTOR CONTROL NO. 6          # 46 K58 16BR/VT
+      - NC                              # 47
+      - NC                              # 48
+      - NC                              # 49
+      - INJECTOR CONTROL NO. 2          # 50 K12 16BR/DB
+      - NC                              # 51
+      - SENSOR GROUND                   # 52 K975 18BR/OR (M/T) / 18BR/BK (A/T)
+      - FUEL RAIL SENSOR RETURN         # 53 K915 18VT/RD
+      - 5 VOLT SUPPLY                   # 54 F855 18PK/YL
+      - NC                              # 55
+      - INJECTOR CONTROL NO. 5          # 56 K38 16BR/OR (M/T) / 16GY (A/T)
+      - INJ HIGH SIDE DRIVER BANK 2     # 57 K229 16BR/LB (M/T) / 16TN/PK (A/T)
+      - NC                              # 58
+      - INJ HIGH SIDE DRIVER BANK 1     # 59 K227 16BR/LG
+      - NC                              # 60
+
+  ecmC2:
+    type: ECM Connector C2
+    subtype: 50-WAY
+    pincount: 50
+    notes: "Power, grounds, outputs, comms. Pins 20/30/40=B+, 32=IGN, 21/49/50=GND."
+    pinlabels:
+      - NC                                    # 1
+      - NC                                    # 2
+      - INLET AIR TEMPERATURE SENSE           # 3  K615 18BR/WT (M/T) / 18VT/WT (A/T)
+      - S/C VENT CONTROL (A/T only)           # 4  V35 18VT/OR
+      - IAT HEATER RELAY NO. 2 CONTROL        # 5  K176 18BR/OR
+      - IAT HEATER RELAY NO. 1 CONTROL        # 6  K174 18BR/YL
+      - SPEED CONTROL SUPPLY (A/T - see 36)   # 7  V32 18VT/YL
+      - NC                                    # 8
+      - PARK/NEUTRAL SWITCH SENSE (A/T only)  # 9  T41 18YL/DB
+      - FAN SPEED SENSOR                      # 10 K161 18BR/LB
+      - VEHICLE SPEED SENSOR SIGNAL           # 11 B22 18DG/YL
+      - OIL PRESSURE SIGNAL                   # 12 G6 18VT/GY
+      - TOW/HAUL SWITCH SENSE (A/T only)      # 13 T6 18DG
+      - GOV PRESSURE SOLENOID (A/T only)      # 14 T118 18DG
+      - 3-4 SOLENOID CONTROL (A/T only)       # 15 T9 18DG/TN
+      - SCI TRANSMIT                          # 16 D21 18PK (M/T) / 18WT/BR (A/T)
+      - NC                                    # 17
+      - GOV PRESSURE SENSOR (A/T only)        # 18 T38 18YL/BR
+      - SCI RECEIVE                           # 19 D20 18WT/LG
+      - FUSED B(+)                            # 20 A209 16RD
+      - GROUND                                # 21 Z902 16BK
+      - NC                                    # 22
+      - 5 VOLT SUPPLY                         # 23 F856 18YL/PK
+      - SENSOR GROUND                         # 24 K900 18DB/DG
+      - TCC SOLENOID CONTROL (A/T only)       # 25 T75 18YL/LB
+      - FUEL LEVEL SENSOR SIGNAL              # 26 N4 18DB/WT
+      - NC                                    # 27
+      - PCI BUS                               # 28 D25 18WT/VT
+      - TRANS TEMP SENSOR (A/T only)          # 29 T54 18DG/OR
+      - FUSED B(+)                            # 30 A209 16RD
+      - TRANS CONTROL RELAY (A/T only)        # 31 T515 18YL/DB
+      - FUSED IGNITION SWITCH OUTPUT          # 32 F202 18PK/GY
+      - 5 VOLT SUPPLY (M/T only)              # 33 K854 18VT/BR
+      - S/C VACUUM CONTROL (A/T only)         # 34 V36 18VT/YL
+      - INLET AIR PRESSURE SENSE              # 35 K616 18BR/YL
+      - SPEED CONTROL SUPPLY (M/T - see 7)    # 36 V32 18VT/YL
+      - BRAKE SWITCH SIGNAL                   # 37 B29 18DG/WT
+      - NC                                    # 38
+      - NC                                    # 39
+      - FUSED B(+)                            # 40 A209 16RD
+      - A/C CLUTCH RELAY CONTROL              # 41 C13 18LB/OR
+      - NC                                    # 42
+      - PARK LOCKOUT SOLENOID CONTROL         # 43 K160 18BR/OR
+      - OUTPUT SPEED SENSOR (A/T only)        # 44 T14 18DG/BR
+      - SENSOR GROUND (A/T only)              # 45 T13 18DG/VT
+      - S/C SWITCH NO. 1 SIGNAL               # 46 V37 18VT
+      - BATT TEMP SIGNAL                      # 47 K25 18DB/VT
+      - APPS NO. 2 RETURN (M/T only)          # 48 K400 18BR/VT
+      - GROUND                                # 49 Z902 16BK
+      - GROUND                                # 50 Z902 16BK
+
+  # ── Engine sensors ─────────────────────────────────────────────────────────
+  coolantTempSensor:
+    type: 2-WAY Female (Diesel)
+    mpn: 5114413AA
+    manufacturer: Mopar
+    pinlabels: [SENSOR GROUND, ECT SIGNAL]
+    notes: "FSM: cav A=K914 18BR/WT, cav B=K2 18VT/OR. Late-style — must swap on early 2003 engines."
+
+  mapIatSensor:
+    type: 4-WAY Female (Diesel)
+    mpn: 5139278AA
+    manufacturer: Mopar
+    pinlabels: [SENSOR GROUND, IAT SIGNAL, 5V SUPPLY, BOOST PRESSURE SIGNAL]
+    notes: "FSM: cav A=K916, B=K21, C=F855, D=K37. In top of intake manifold."
+
+  crankPositionSensor:
+    type: 3-WAY Female (Diesel)
+    mpn: 5093101AA
+    manufacturer: Mopar
+    pinlabels: [5V SUPPLY, SENSOR GROUND, CKP SIGNAL]
+    notes: "FSM: 1=K853 18DB/BR, 2=K975 18BR/OR, 3=K24 18BR/LB. Lower front driver side."
+
+  camPositionSensor:
+    type: 3-WAY Female (Diesel)
+    mpn: 5093101AA
+    manufacturer: Mopar
+    pinlabels: [5V SUPPLY, SENSOR GROUND, CMP SIGNAL]
+    notes: "FSM: 1=F855 18PK/YL, 2=K916 18BR/OR, 3=K44 18DB/GY. Below CP3 pump."
+
+  waterInFuelSensor:
+    type: 2-WAY Female
+    mpn: 5093128AA
+    manufacturer: Mopar
+    pinlabels: [SENSOR GROUND, WIF SIGNAL]
+    notes: "FSM: cav A=K914 18BR/WT, cav B=G123 18VT/LG. On fuel filter/water separator."
+
+  oilPressureSwitch:
+    type: 2-WAY Female
+    mpn: 5083366AA
+    manufacturer: Mopar
+    pinlabels: [OIL PRESSURE SIGNAL, NC]
+    notes: "FSM: 1=G6 18VT/GY. CPA orange lock tab."
+
+  batteryTempSensor:
+    type: BLACK 2-WAY Female
+    mpn: 56041053
+    manufacturer: Mopar
+    pinlabels: [BATT TEMP SIGNAL, SENSOR GROUND]
+    notes: "FSM: 1=K25 18DB/VT, 2=K900 20DB/DG. Mount in battery box."
+
+  fuelControlActuator:
+    type: 3-WAY Female (Diesel)
+    pinlabels: [FUEL RAIL SENSOR RETURN, FUEL PUMP DRIVER, 5V SUPPLY]
+    notes: "FSM: 1=K915 18VT/RD, 2=K181 18BR/YL, 3=F855 18PK/YL. CP3 metering solenoid."
+
+  liftPumpMotor:
+    type: 2-WAY Female (Diesel)
+    pinlabels: [LIFT PUMP FEED, GROUND]
+    notes: "FSM: 1=N2 18DB/YL (from ECM C1-45), 2=Z816 18BK."
+
+  fuelHeater:
+    type: 2-WAY Female (Diesel)
+    pinlabels: [GROUND, FUEL HEATER RELAY OUTPUT]
+    notes: "FSM: A=Z816 14BK, B=A961 14RD. Power from fuel heater relay, not ECM."
+
+  generator:
+    type: BLACK 2-WAY Female
+    pinlabels: [GEN FIELD CONTROL, GROUND]
+    notes: "FSM: 1=K20 18BR/GY, 2=Z816 18BK."
+
+  vistronicFanDrive:
+    type: 6-WAY Female (Diesel)
+    pinlabels: [FAN CLUTCH PWM, SENSOR GROUND, FAN SPEED SENSOR, NC, 5V SUPPLY, IGN FUSED RUN]
+    notes: "FSM: 1=K160 18BR/OR (fan clutch PWM), 2=K900, 3=K161 18BR/LB, 5=F856 18YL/PK, 6=F504 20GY/PK (from truck IGN)."
+
+  injectorPack1:
+    type: 4-WAY Female (Diesel)
+    pinlabels: [INJ HIGH SIDE BANK 1, INJ CONTROL NO. 2, INJ HIGH SIDE BANK 1, INJ CONTROL NO. 1]
+    notes: "FSM: 1=K227 14BR/LG, 2=K12 14BR/DB, 3=K227 14BR/LG, 4=K11 14BR/YL. Cylinders 1 and 2."
+
+  injectorPack2:
+    type: 4-WAY Female (Diesel)
+    pinlabels: [INJ HIGH SIDE BANK 2, INJ CONTROL NO. 4, INJ HIGH SIDE BANK 1, INJ CONTROL NO. 3]
+    notes: "FSM: 1=K229 14BR/LB, 2=K14 14BR/TN, 3=K227 14BR/LG, 4=K13 14BR/LB. Cylinders 3 and 4."
+
+  injectorPack3:
+    type: 4-WAY Female (Diesel)
+    pinlabels: [INJ HIGH SIDE BANK 2, INJ CONTROL NO. 6, INJ HIGH SIDE BANK 2, INJ CONTROL NO. 5]
+    notes: "FSM: 1=K229 14BR/LB, 2=K58 14BR/VT, 3=K229 14TN/PK, 4=K38 14BR/OR. Cylinders 5 and 6."
+
+  appsAt:
+    type: 6-WAY Female (Diesel A/T)
+    mpn: 53031575AH
+    manufacturer: Mopar
+    pinlabels: [SENSOR GROUND, NOT IDLE SWITCH, TP SIGNAL, TP SENSOR RETURN, 5V SUPPLY, IDLE SWITCH]
+    notes: "A/T bell-crank APPS on intake manifold. Use appsAt OR appsMt — not both."
+
+  appsMt:
+    type: 6-WAY Female (Diesel M/T)
+    mpn: 53031576AD
+    manufacturer: Mopar
+    pinlabels: [APPS NO. 2 SIGNAL, APPS NO. 2 5V SUPPLY, APPS NO. 1 5V SUPPLY, APPS NO. 2 RETURN, APPS NO. 1 SIGNAL, APPS NO. 1 RETURN]
+    notes: "M/T under-battery-tray APPS (2004). 2005 pedal APPS mpn 53032753AC. Use appsAt OR appsMt — not both."
+
+  # ── Chassis ground stud ────────────────────────────────────────────────────
+  chassisGnd:
+    type: ring terminal
+    pincount: 1
+    notes: "Z816 circuit — engine block or chassis ground stud. Shared by generator, lift pump, and fuel heater."
+
+  # ── Truck-side firewall ──────────────────────────────────────────────────────
+  firewallConn:
+    type: Multi-pin Inline
+    pincount: 22
+    notes: "Wires that pass to truck side at firewall. OEM connector P/N TODO — verify against body harness."
+    pinlabels:
+      - FUSED B(+)                   # 1  A209 16RD → ECM C2-20
+      - FUSED B(+)                   # 2  A209 16RD → ECM C2-30
+      - FUSED B(+)                   # 3  A209 16RD → ECM C2-40
+      - GROUND                       # 4  Z902 16BK → ECM C2-21
+      - GROUND                       # 5  Z902 16BK → ECM C2-49/50
+      - FUSED IGNITION OUTPUT        # 6  F202 18PK/GY → ECM C2-32
+      - CCD BUS (+)                  # 7  D72 18WT/LB → ECM C1-4
+      - CCD BUS (-)                  # 8  D71 18WT/DB → ECM C1-5
+      - PCI BUS                      # 9  D25 18WT/VT → ECM C2-28
+      - SCI TRANSMIT                 # 10 D21 18PK → ECM C2-16
+      - SCI RECEIVE                  # 11 D20 18WT/LG → ECM C2-19
+      - VEHICLE SPEED SENSOR         # 12 B22 18DG/YL → ECM C2-11
+      - BRAKE SWITCH SIGNAL          # 13 B29 18DG/WT → ECM C2-37
+      - PARK/NEUTRAL SWITCH          # 14 T41 (A/T) → ECM C2-9
+      - A/C CLUTCH RELAY CONTROL     # 15 C13 18LB/OR → ECM C2-41
+      - IAT HEATER RELAY NO. 1 CTRL  # 16 K174 18BR/YL → ECM C2-6
+      - IAT HEATER RELAY NO. 2 CTRL  # 17 K176 18BR/OR → ECM C2-5
+      - SPEED CONTROL SUPPLY         # 18 V32 → ECM C2-36 (M/T)
+      - SPEED CONTROL SWITCH         # 19 V37 18VT → ECM C2-46
+      - FUEL HEATER RELAY OUTPUT     # 20 A961 14RD → fuelHeater
+      - FAN DRIVE IGN FUSED RUN      # 21 F504 → vistronicFanDrive pin 6
+      - FUEL LEVEL SENSOR SIGNAL     # 22 N4 18DB/WT → ECM C2-26
+
+cables:
+  # ECM C2 power and grounds
+  ecmBattPlus:
+    colors: [RD, RD, RD]
+    gauge: 16 AWG
+    notes: "A209 16RD × 3 — firewall to ECM C2 pins 20, 30, 40"
+
+  ecmGnd:
+    colors: [BK, BK, BK]
+    gauge: 16 AWG
+    notes: "Z902 16BK × 3 — ECM C2 pins 21, 49, 50 to firewall/chassis"
+
+  ecmIgnWire:
+    colors: [PK]
+    gauge: 18 AWG
+    notes: "F202 18PK/GY — ignition switch output to ECM C2-32"
+
+  # CCD / PCI / SCI bus
+  ccdBusCable:
+    colors: [WH, WH]
+    gauge: 18 AWG
+    notes: "D72 18WT/LB (CCD+) and D71 18WT/DB (CCD-) — ECM C1-4/5 to firewall"
+
+  pciBusWire:
+    colors: [WH]
+    gauge: 18 AWG
+    notes: "D25 18WT/VT — ECM C2-28 to firewall"
+
+  sciCable:
+    colors: [PK, WH]
+    gauge: 18 AWG
+    notes: "D21 18PK (TX) and D20 18WT/LG (RX) — ECM C2-16/19 to firewall"
+
+  # Coolant temp sensor
+  ctsCable:
+    colors: [BN, BU]
+    gauge: 18 AWG
+    notes: "K914 18BR/WT (sensor gnd) and K2 18VT/OR (ECT signal)"
+
+  # MAP/IAT sensor
+  mapIatCable:
+    colors: [BN, BU, PK, BU]
+    gauge: 18 AWG
+    notes: "K916 (snd gnd), K21 18DB/LG (IAT), F855 18PK/YL (5V), K37 18BR/OR (boost)"
+
+  # Crankshaft position sensor
+  ckpCable:
+    colors: [BU, BN, BN]
+    gauge: 18 AWG
+    notes: "K853 18DB/BR (5V), K975 18BR/OR (snd gnd), K24 18BR/LB (CKP signal)"
+
+  # Camshaft position sensor
+  cmpCable:
+    colors: [PK, BN, BU]
+    gauge: 18 AWG
+    notes: "F855 18PK/YL (5V), K916 18BR/OR (snd gnd), K44 18DB/GY (CMP signal)"
+
+  # Water in fuel sensor
+  wifCable:
+    colors: [BN, VT]
+    gauge: 18 AWG
+    notes: "K914 18BR/WT (snd gnd), G123 18VT/LG (WIF signal)"
+
+  # Oil pressure switch
+  opsWire:
+    colors: [VT]
+    gauge: 18 AWG
+    notes: "G6 18VT/GY — oil pressure signal to ECM C2-12"
+
+  # Battery temperature sensor
+  btsCable:
+    colors: [BU, BU]
+    gauge: 18 AWG
+    notes: "K25 18DB/VT (batt temp signal), K900 18DB/DG (snd gnd)"
+
+  # Fuel control actuator
+  fcaCable:
+    colors: [VT, BN, PK]
+    gauge: 18 AWG
+    notes: "K915 18VT/RD (fuel rail sensor return), K181 18BR/YL (fuel pump driver), F855 18PK/YL (5V)"
+
+  # Lift pump motor
+  liftPumpCable:
+    colors: [BU, BK]
+    gauge: 18 AWG
+    notes: "N2 18DB/YL (lift pump feed from ECM C1-45), Z816 18BK (ground)"
+
+  # Fuel heater
+  fuelHeaterCable:
+    colors: [BK, RD]
+    gauge: 14 AWG
+    notes: "Z816 14BK (ground), A961 14RD (from fuel heater relay output at firewall)"
+
+  # Generator
+  genCable:
+    colors: [BN, BK]
+    gauge: 18 AWG
+    notes: "K20 18BR/GY (gen field control from ECM C1-7), Z816 18BK (ground)"
+
+  # Vistronic fan drive
+  fanCable:
+    colors: [BN, BU, BN, BN, PK, GN]
+    gauge: 18 AWG
+    notes: "K160 (fan PWM), K900 (snd gnd), K161 (fan speed), NC, F856 (5V), F504 (IGN fused run from firewall)"
+
+  # Injector packs (14 AWG high-current)
+  injPack1Cable:
+    colors: [BN, BN, BN, BN]
+    gauge: 14 AWG
+    notes: "K227/K12/K227/K11 — bank1 high side + cyl 2 low + bank1 high side + cyl 1 low"
+
+  injPack2Cable:
+    colors: [BN, BN, BN, BN]
+    gauge: 14 AWG
+    notes: "K229/K14/K227/K13 — bank2 high side + cyl 4 low + bank1 high side + cyl 3 low"
+
+  injPack3Cable:
+    colors: [BN, BN, BN, BN]
+    gauge: 14 AWG
+    notes: "K229/K58/K229/K38 — bank2 high side + cyl 6 low + bank2 high side + cyl 5 low"
+
+  # APPS A/T (bell crank)
+  appsAtCable:
+    colors: [BN, BN, BN, BN, VT, OG]
+    gauge: 18 AWG
+    notes: "K914/K556/K22/K922/K851/K565"
+
+  # APPS M/T
+  appsMtCable:
+    colors: [WH, VT, BN, BN, BN, BN]
+    gauge: 20 AWG
+    notes: "K29/K854/K852/K400/K23/K167"
+
+  # Truck-interface wires
+  vssWire:
+    colors: [GN]
+    gauge: 18 AWG
+    notes: "B22 18DG/YL — VSS signal from ABS module to ECM C2-11"
+
+  brakeSwitchWire:
+    colors: [GN]
+    gauge: 18 AWG
+    notes: "B29 18DG/WT — brake switch to ECM C2-37"
+
+  acClutchWire:
+    colors: [BU]
+    gauge: 18 AWG
+    notes: "C13 18LB/OR — A/C clutch relay control from ECM C2-41"
+
+  iatHeater1Wire:
+    colors: [BN]
+    gauge: 18 AWG
+    notes: "K174 18BR/YL — IAT heater relay 1 control from ECM C2-6"
+
+  iatHeater2Wire:
+    colors: [BN]
+    gauge: 18 AWG
+    notes: "K176 18BR/OR — IAT heater relay 2 control from ECM C2-5"
+
+  fuelLevelWire:
+    colors: [BU]
+    gauge: 18 AWG
+    notes: "N4 18DB/WT — fuel level sensor signal from ECM C2-26 to truck"
+
+connections:
+  # ── ECM C2 power/ground/ignition ────────────────────────────────────────────
+  -
+    - firewallConn: [1, 2, 3]
+    - ecmBattPlus: [1, 2, 3]
+    - ecmC2: [20, 30, 40]
+  -
+    - firewallConn: [4, 5, 5]
+    - ecmGnd: [1, 2, 3]
+    - ecmC2: [21, 49, 50]
+  -
+    - firewallConn: [6]
+    - ecmIgnWire: [1]
+    - ecmC2: [32]
+
+  # ── CCD / PCI / SCI bus ─────────────────────────────────────────────────────
+  -
+    - firewallConn: [7, 8]
+    - ccdBusCable: [1, 2]
+    - ecmC1: [4, 5]
+  -
+    - firewallConn: [9]
+    - pciBusWire: [1]
+    - ecmC2: [28]
+  -
+    - firewallConn: [10, 11]
+    - sciCable: [1, 2]
+    - ecmC2: [16, 19]
+
+  # ── Coolant temp sensor ──────────────────────────────────────────────────────
+  -
+    - coolantTempSensor: [1, 2]
+    - ctsCable: [1, 2]
+    - ecmC1: [23, 11]
+
+  # ── MAP/IAT sensor ───────────────────────────────────────────────────────────
+  -
+    - mapIatSensor: [1, 2, 3, 4]
+    - mapIatCable: [1, 2, 3, 4]
+    - ecmC1: [32, 15, 54, 43]
+
+  # ── Crankshaft position sensor ───────────────────────────────────────────────
+  -
+    - crankPositionSensor: [1, 2, 3]
+    - ckpCable: [1, 2, 3]
+    - ecmC1: [27, 52, 22]
+
+  # ── Camshaft position sensor ─────────────────────────────────────────────────
+  -
+    - camPositionSensor: [1, 2, 3]
+    - cmpCable: [1, 2, 3]
+    - ecmC1: [54, 32, 24]
+
+  # ── Water in fuel sensor ─────────────────────────────────────────────────────
+  -
+    - waterInFuelSensor: [1, 2]
+    - wifCable: [1, 2]
+    - ecmC1: [23, 31]
+
+  # ── Oil pressure switch ──────────────────────────────────────────────────────
+  -
+    - oilPressureSwitch: [1]
+    - opsWire: [1]
+    - ecmC2: [12]
+
+  # ── Battery temp sensor ──────────────────────────────────────────────────────
+  -
+    - batteryTempSensor: [1, 2]
+    - btsCable: [1, 2]
+    - ecmC2: [47, 24]
+
+  # ── Fuel control actuator ────────────────────────────────────────────────────
+  -
+    - fuelControlActuator: [1, 2, 3]
+    - fcaCable: [1, 2, 3]
+    - ecmC1: [53, 12, 54]
+
+  # ── Lift pump motor ──────────────────────────────────────────────────────────
+  -
+    - ecmC1: [45]
+    - liftPumpCable: [1]
+    - liftPumpMotor: [1]
+  -
+    - chassisGnd: [1]
+    - liftPumpCable: [2]
+    - liftPumpMotor: [2]
+
+  # ── Fuel heater ─────────────────────────────────────────────────────────────
+  -
+    - chassisGnd: [1]
+    - fuelHeaterCable: [1]
+    - fuelHeater: [1]
+  -
+    - firewallConn: [20]
+    - fuelHeaterCable: [2]
+    - fuelHeater: [2]
+
+  # ── Generator ────────────────────────────────────────────────────────────────
+  -
+    - ecmC1: [7]
+    - genCable: [1]
+    - generator: [1]
+  -
+    - chassisGnd: [1]
+    - genCable: [2]
+    - generator: [2]
+
+  # ── Vistronic fan drive ──────────────────────────────────────────────────────
+  -
+    - vistronicFanDrive: [1, 2, 3, 5, 6]
+    - fanCable: [1, 2, 3, 5, 6]
+    - ecmC2: [43, 24, 10, 23, 23]
+
+  # ── Injector packs ───────────────────────────────────────────────────────────
+  -
+    - injectorPack1: [1, 2, 3, 4]
+    - injPack1Cable: [1, 2, 3, 4]
+    - ecmC1: [59, 50, 59, 30]
+  -
+    - injectorPack2: [1, 2, 3, 4]
+    - injPack2Cable: [1, 2, 3, 4]
+    - ecmC1: [57, 36, 59, 40]
+  -
+    - injectorPack3: [1, 2, 3, 4]
+    - injPack3Cable: [1, 2, 3, 4]
+    - ecmC1: [57, 46, 57, 56]
+
+  # ── APPS (A/T — bell crank style) ───────────────────────────────────────────
+  # Remove this block and uncomment appsMt block when using M/T ECM
+  -
+    - appsAt: [1, 2, 3, 4, 5, 6]
+    - appsAtCable: [1, 2, 3, 4, 5, 6]
+    - ecmC1: [23, 44, 14, 33, 42, 34]
+
+  # ── APPS (M/T — pedal/under-battery style) ──────────────────────────────────
+  # Uncomment for M/T ECM; comment out appsAt block above
+  # -
+  #   - appsMt: [1, 2, 3, 4, 5, 6]
+  #   - appsMtCable: [1, 2, 3, 4, 5, 6]
+  #   - ecmC1: [16, 42, 42, 16, 14, 33]
+
+  # ── Truck-side signals ───────────────────────────────────────────────────────
+  -
+    - firewallConn: [12]
+    - vssWire: [1]
+    - ecmC2: [11]
+  -
+    - firewallConn: [13]
+    - brakeSwitchWire: [1]
+    - ecmC2: [37]
+  -
+    - firewallConn: [15]
+    - acClutchWire: [1]
+    - ecmC2: [41]
+  -
+    - firewallConn: [16]
+    - iatHeater1Wire: [1]
+    - ecmC2: [6]
+  -
+    - firewallConn: [17]
+    - iatHeater2Wire: [1]
+    - ecmC2: [5]
+  -
+    - firewallConn: [22]
+    - fuelLevelWire: [1]
+    - ecmC2: [26]
