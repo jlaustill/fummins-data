@@ -274,74 +274,87 @@ cables:
   # ECM C2 power and grounds
   ecmBattPlus:
     colors: [RD, RD, RD]
+    wirelabels: [A209 16RD, A209 16RD, A209 16RD]
     gauge: 16 AWG
     notes: "A209 16RD × 3 — firewall to ECM C2 pins 20, 30, 40"
 
   ecmGnd:
     colors: [BK, BK, BK]
+    wirelabels: [Z902 16BK, Z902 16BK, Z902 16BK]
     gauge: 16 AWG
     notes: "Z902 16BK × 3 — ECM C2 pins 21, 49, 50 to firewall/chassis"
 
   ecmIgnWire:
     colors: [PK]
+    wirelabels: [F202 18PK/GY]
     gauge: 18 AWG
     notes: "F202 18PK/GY — ignition switch output to ECM C2-32"
 
   # CCD / PCI / SCI bus
   ccdBusCable:
     colors: [WH, WH]
+    wirelabels: [D72 18WT/LB, D71 18WT/DB]
     gauge: 18 AWG
     notes: "D72 18WT/LB (CCD+) and D71 18WT/DB (CCD-) — ECM C1-4/5 to firewall"
 
   pciBusWire:
     colors: [WH]
+    wirelabels: [D25 18WT/VT]
     gauge: 18 AWG
     notes: "D25 18WT/VT — ECM C2-28 to firewall"
 
   sciCable:
     colors: [PK, WH]
+    wirelabels: [D21 18PK, D20 18WT/LG]
     gauge: 18 AWG
     notes: "D21 18PK (TX) and D20 18WT/LG (RX) — ECM C2-16/19 to firewall"
 
   # Coolant temp sensor
   ctsCable:
     colors: [BN, BU]
+    wirelabels: [K914 18BR/WT, K2 18VT/OR]
     gauge: 18 AWG
     notes: "K914 18BR/WT (sensor gnd) and K2 18VT/OR (ECT signal)"
 
   # MAP/IAT sensor
   mapIatCable:
     colors: [BN, BU, PK, BU]
+    wirelabels: [K916, K21 18DB/LG, F855 18PK/YL, K37 18BR/OR]
     gauge: 18 AWG
     notes: "K916 (snd gnd), K21 18DB/LG (IAT), F855 18PK/YL (5V), K37 18BR/OR (boost)"
 
   # Crankshaft position sensor
   ckpCable:
     colors: [BU, BN, BN]
+    wirelabels: [K853 18DB/BR, K975 18BR/OR, K24 18BR/LB]
     gauge: 18 AWG
     notes: "K853 18DB/BR (5V), K975 18BR/OR (snd gnd), K24 18BR/LB (CKP signal)"
 
   # Camshaft position sensor
   cmpCable:
     colors: [PK, BN, BU]
+    wirelabels: [F855 18PK/YL, K916 18BR/OR, K44 18DB/GY]
     gauge: 18 AWG
     notes: "F855 18PK/YL (5V), K916 18BR/OR (snd gnd), K44 18DB/GY (CMP signal)"
 
   # Water in fuel sensor
   wifCable:
     colors: [BN, VT]
+    wirelabels: [K914 18BR/WT, G123 18VT/LG]
     gauge: 18 AWG
     notes: "K914 18BR/WT (snd gnd), G123 18VT/LG (WIF signal)"
 
   # Oil pressure switch
   opsWire:
     colors: [VT]
+    wirelabels: [G6 18VT/GY]
     gauge: 18 AWG
     notes: "G6 18VT/GY — oil pressure signal to ECM C2-12"
 
   # Battery temperature sensor
   btsCable:
     colors: [BU, BU]
+    wirelabels: [K25 18DB/VT, K900 18DB/DG]
     gauge: 18 AWG
     notes: "K25 18DB/VT (batt temp signal), K900 18DB/DG (snd gnd)"
 
@@ -355,83 +368,98 @@ cables:
   # Lift pump motor
   liftPumpCable:
     colors: [BU, BK]
+    wirelabels: [N2 18DB/YL, Z816 18BK]
     gauge: 18 AWG
     notes: "N2 18DB/YL (lift pump feed from ECM C1-45), Z816 18BK (ground)"
 
   # Fuel heater
   fuelHeaterCable:
     colors: [BK, RD]
+    wirelabels: [Z816 14BK, A961 14RD]
     gauge: 14 AWG
     notes: "Z816 14BK (ground), A961 14RD (from fuel heater relay output at firewall)"
 
   # Generator
   genCable:
     colors: [BN, BK]
+    wirelabels: [K20 18BR/GY, Z816 18BK]
     gauge: 18 AWG
     notes: "K20 18BR/GY (gen field control from ECM C1-7), Z816 18BK (ground)"
 
   # Vistronic fan drive
   fanCable:
     colors: [BN, BU, BN, BN, PK, GN]
+    wirelabels: [K160, K900, K161, NC, F856, F504]
     gauge: 18 AWG
     notes: "K160 (fan PWM), K900 (snd gnd), K161 (fan speed), NC, F856 (5V), F504 (IGN fused run from firewall)"
 
   # Injector packs (14 AWG high-current)
   injPack1Cable:
     colors: [BN, BN, BN, BN]
+    wirelabels: [K227, K12, K227, K11]
     gauge: 14 AWG
     notes: "K227/K12/K227/K11 — bank1 high side + cyl 2 low + bank1 high side + cyl 1 low"
 
   injPack2Cable:
     colors: [BN, BN, BN, BN]
+    wirelabels: [K229, K14, K227, K13]
     gauge: 14 AWG
     notes: "K229/K14/K227/K13 — bank2 high side + cyl 4 low + bank1 high side + cyl 3 low"
 
   injPack3Cable:
     colors: [BN, BN, BN, BN]
+    wirelabels: [K229, K58, K229, K38]
     gauge: 14 AWG
     notes: "K229/K58/K229/K38 — bank2 high side + cyl 6 low + bank2 high side + cyl 5 low"
 
   # APPS A/T (bell crank)
   appsAtCable:
     colors: [BN, BN, BN, BN, VT, OG]
+    wirelabels: [K914, K556, K22, K922, K851, K565]
     gauge: 18 AWG
     notes: "K914/K556/K22/K922/K851/K565"
 
   # APPS M/T
   appsMtCable:
     colors: [WH, VT, BN, BN, BN, BN]
+    wirelabels: [K29, K854, K852, K400, K23, K167]
     gauge: 20 AWG
     notes: "K29/K854/K852/K400/K23/K167"
 
   # Truck-interface wires
   vssWire:
     colors: [GN]
+    wirelabels: [B22 18DG/YL]
     gauge: 18 AWG
     notes: "B22 18DG/YL — VSS signal from ABS module to ECM C2-11"
 
   brakeSwitchWire:
     colors: [GN]
+    wirelabels: [B29 18DG/WT]
     gauge: 18 AWG
     notes: "B29 18DG/WT — brake switch to ECM C2-37"
 
   acClutchWire:
     colors: [BU]
+    wirelabels: [C13 18LB/OR]
     gauge: 18 AWG
     notes: "C13 18LB/OR — A/C clutch relay control from ECM C2-41"
 
   iatHeater1Wire:
     colors: [BN]
+    wirelabels: [K174 18BR/YL]
     gauge: 18 AWG
     notes: "K174 18BR/YL — IAT heater relay 1 control from ECM C2-6"
 
   iatHeater2Wire:
     colors: [BN]
+    wirelabels: [K176 18BR/OR]
     gauge: 18 AWG
     notes: "K176 18BR/OR — IAT heater relay 2 control from ECM C2-5"
 
   fuelLevelWire:
     colors: [BU]
+    wirelabels: [N4 18DB/WT]
     gauge: 18 AWG
     notes: "N4 18DB/WT — fuel level sensor signal from ECM C2-26 to truck"
 
