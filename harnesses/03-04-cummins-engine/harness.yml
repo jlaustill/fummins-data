@@ -181,10 +181,10 @@ connectors:
     pinlabels: [BATT TEMP SIGNAL, SENSOR GROUND]
     notes: "FSM: 1=K25 18DB/VT, 2=K900 20DB/DG. Mount in battery box."
 
-  fuelControlActuator:
+  fuelRailPressureSensor:
     type: 3-WAY Female (Diesel)
-    pinlabels: [FUEL RAIL SENSOR RETURN, FUEL PUMP DRIVER, 5V SUPPLY]
-    notes: "FSM: 1=K915 18VT/RD, 2=K181 18BR/YL, 3=F855 18PK/YL. CP3 metering solenoid."
+    pinlabels: [FUEL RAIL PRES SENSOR GROUND, FUEL RAIL PRES SENSOR SIGNAL, FUEL RAIL PRES SENSOR 5V]
+    notes: "FSM: 1=K915 18BR/BK, 2=K181 18VT/RD, 3=F855 18PK/YL. CP3 fuel rail pressure sensor."
 
   liftPumpMotor:
     type: 2-WAY Female (Diesel)
@@ -345,11 +345,12 @@ cables:
     gauge: 18 AWG
     notes: "K25 18DB/VT (batt temp signal), K900 18DB/DG (snd gnd)"
 
-  # Fuel control actuator
-  fcaCable:
-    colors: [VT, BN, PK]
+  # Fuel rail pressure sensor
+  fuelRailPressureSensorCable:
+    colors: [BNBK, VTRD, PKYE]
+    wirelabels: [K915 18BR/BK, K181 18VT/RD, F855 18PK/YL]
     gauge: 18 AWG
-    notes: "K915 18VT/RD (fuel rail sensor return), K181 18BR/YL (fuel pump driver), F855 18PK/YL (5V)"
+    notes: "K915 18BR/BK (fuel rail sensor ground), K181 18VT/RD (fuel rail sensor signal), F855 18PK/YL (fuel rail sensor 5V)"
 
   # Lift pump motor
   liftPumpCable:
@@ -505,10 +506,10 @@ connections:
     - btsCable: [1, 2]
     - ecmC2: [47, 24]
 
-  # ── Fuel control actuator ────────────────────────────────────────────────────
+  # ── Fuel rail pressure sensor ───────────────────────────────────────────────
   -
-    - fuelControlActuator: [1, 2, 3]
-    - fcaCable: [1, 2, 3]
+    - fuelRailPressureSensor: [1, 2, 3]
+    - fuelRailPressureSensorCable: [1, 2, 3]
     - ecmC1: [53, 12, 54]
 
   # ── Lift pump motor ──────────────────────────────────────────────────────────

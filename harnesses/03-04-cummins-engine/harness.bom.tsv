@@ -3,7 +3,7 @@ Id	Description	Qty	Unit	Designators	Manufacturer	MPN
 2	Cable, 2 x 14 AWG	0	m	fuelHeaterCable		
 3	Cable, 2 x 18 AWG	0	m	btsCable, ccdBusCable, ctsCable, genCable, liftPumpCable, sciCable, wifCable		
 4	Cable, 3 x 16 AWG	0	m	ecmBattPlus, ecmGnd		
-5	Cable, 3 x 18 AWG	0	m	ckpCable, cmpCable, fcaCable		
+5	Cable, 3 x 18 AWG	0	m	ckpCable, cmpCable, fuelRailPressureSensorCable		
 6	Cable, 4 x 14 AWG	0	m	injPack1Cable, injPack2Cable, injPack3Cable		
 7	Cable, 4 x 18 AWG	0	m	mapIatCable		
 8	Cable, 6 x 18 AWG	0	m	appsAtCable, fanCable		
@@ -11,7 +11,7 @@ Id	Description	Qty	Unit	Designators	Manufacturer	MPN
 10	Connector, 2-WAY Female (Diesel), 2 pins	1		coolantTempSensor	Mopar	5114413AA
 11	Connector, 2-WAY Female, 2 pins	1		oilPressureSwitch	Mopar	5083366AA
 12	Connector, 2-WAY Female, 2 pins	1		waterInFuelSensor	Mopar	5093128AA
-13	Connector, 3-WAY Female (Diesel), 3 pins	1		fuelControlActuator		
+13	Connector, 3-WAY Female (Diesel), 3 pins	1		fuelRailPressureSensor		
 14	Connector, 3-WAY Female (Diesel), 3 pins	2		camPositionSensor, crankPositionSensor	Mopar	5093101AA
 15	Connector, 4-WAY Female (Diesel), 4 pins	3		injectorPack1, injectorPack2, injectorPack3		
 16	Connector, 4-WAY Female (Diesel), 4 pins	1		mapIatSensor	Mopar	5139278AA
